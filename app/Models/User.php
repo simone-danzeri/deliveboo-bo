@@ -43,7 +43,7 @@ class User extends Authenticatable
     ];
 
     // Relations
-    public function retaurants() {
+    public function restaurants() {
         return $this->hasMany(Restaurant::class);
     }
 }
