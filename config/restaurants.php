@@ -142,8 +142,8 @@ return [
         "user_id" => "5",
         "address" => "Viale delle Betulle, 8, Rovello Porro (MI)",
         "phone" => "3412643895",
-        "img" => "cover-restaurant/9473758091.jpeg",
-        "email" => "https://scattidigusto.b-cdn.net/wp-content/uploads/2022/07/Giardino-Eden-Ischia.jpeg",
+        "img" => "https://scattidigusto.b-cdn.net/wp-content/uploads/2022/07/Giardino-Eden-Ischia.jpeg",
+        "email" => "ilgiardinodigiada@mail.it",
         "vat_number" => "46703526973"
     ],
     [
