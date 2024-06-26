@@ -71,7 +71,7 @@
                                                             <a href="#" class="ms-link">Visualizza dettagli</a>
                                                         </li>
                                                         <li>
-                                                            <a href="#" class="ms-link"><i class="fa-solid fa"></i>Modifica</a>
+                                                            <a href="{{route('admin.restaurants.edit', ['restaurant' => $rest->slug])}}" class="ms-link"><i class="fa-solid fa"></i>Modifica</a>
                                                         </li>
                                                     </ul>
                                                 </li>
