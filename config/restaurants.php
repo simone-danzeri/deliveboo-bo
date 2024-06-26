@@ -23,6 +23,40 @@ return [
         "vat_number" => "17356835891",
         "type_id" => ""
     ],
+    [
+        "restaurant_name" => "Pane & Pomodoro",
+        "slug" => "pane-pomodoro",
+        "user_id" => "1",
+        "address" => "Via Martini, 7, Rovello Porro (MI)",
+        "phone" => "3456544567",
+        "img" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb2FHTEMkEqOipqHJkPIpgKTffAO4EryoGQWKs4H9OmHeIwU0EDu5fPL2RZCiDZJX-37g&usqp=CAU",
+        "email" => "paneepomodoro@mail.it",
+        "vat_number" => "57358943657",
+        "type_id" => ""
+    ],
+    [
+        "restaurant_name" => "I Due Ghiottoni",
+        "slug" => "i-due-ghiottoni",
+        "user_id" => "1",
+        "address" => "Via Aldo Moro, 3, Rovello Porro (MI)",
+        "phone" => "3896546454",
+        "img" => "https://cdn.norbaonline.it/static/2023/12/BA-S-50-ANNI-RISTORANTE-2GHIOTTONI-LOG.mp4.jpeg",
+        "email" => "idueghiottoni@mail.it",
+        "vat_number" => "95736492532",
+        "type_id" => ""
+    ],
+    [
+        "restaurant_name" => "Il Pescatore",
+        "slug" => "il-pescatore",
+        "user_id" => "1",
+        "address" => "Via Dante Alighieri, 15, Rovello Porro (MI)",
+        "phone" => "3345679832",
+        "img" => "https://media-cdn.tripadvisor.com/media/photo-s/25/4e/06/93/caption.jpg",
+        "email" => "ilpescatore@mail.it",
+        "vat_number" => "46274438956",
+        "type_id" => ""
+    ],
+
     // User 2
     [
         "restaurant_name" => "La Luna Del Porro",
@@ -104,4 +138,5 @@ return [
         "vat_number" => "46703526973",
         "type_id" => ""
     ],
+
 ];
