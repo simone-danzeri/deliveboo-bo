@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\RestaurantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,9 @@ Route::middleware(['auth', 'verified'])
 ->prefix('admin')
 ->group(function() {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::resource('restaurants', RestaurantController::class)->parameters([
+        'restaurants' => 'restaurant:slug'
+    ]);
 });
 
 
