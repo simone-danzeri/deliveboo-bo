@@ -154,7 +154,7 @@ return [
         "phone" => "3491476532",
         "img" => "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/0c/84/97/take-sushi-ristorante.jpg?w=1200&h=-1&s=1",
         "email" => "noodlesta@mail.it",
-        "vat_number" => "46703526973"
+        "vat_number" => "36706726923"
     ],
     [
         "restaurant_name" => "El Sombrero Loco",
