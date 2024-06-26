@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Restaurant;
+use App\Models\Type;
 
 class RestaurantController extends Controller
 {
@@ -55,9 +57,10 @@ class RestaurantController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Restaurant $restaurant)
     {
-        //
+        $types = Type::all();
+        return view('admin.restaurants.edit', compact('restaurant', 'types'));
     }
 
     /**
