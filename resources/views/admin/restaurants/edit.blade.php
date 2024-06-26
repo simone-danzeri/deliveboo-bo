@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('content')
-    <h1>ciao sono edit</h1>
+    <h1>{{$restaurant->restaurant_name}}</h1>
     {{-- Sezione messaggi di errore --}}
     @if ($errors->any())
         <div class="alert alert-danger">
