@@ -20,6 +20,7 @@
     <!-- Usando Vite -->
 
 
+
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
 </head>
@@ -50,6 +51,7 @@
         <div class="container-fluid vh-100">
             <div class="row h-100">
 
+
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block navbar-dark sidebar collapse">
                     <div class="position-sticky pt-3">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -79,6 +81,7 @@
                                 </div>
                             @endforeach
                         </div>
+
                     </div>
                 </nav>
 
@@ -88,9 +91,11 @@
             </div>
         </div>
 
+
     </div>
 </body>
 
 
 </html>
+
 
