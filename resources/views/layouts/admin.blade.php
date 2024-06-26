@@ -18,11 +18,15 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Usando Vite -->
+
+
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+
 </head>
 
 <body>
     <div id="app">
+
 
         <header class="navbar sticky-top flex-md-nowrap p-2 shadow justify-content-space-between">
             <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +36,7 @@
             <div class="navbar-nav">
                 <div class="nav-item text-nowrap ms-2">
                     <a class="nav-link px-3 text-white" href="{{ route('logout') }}" onclick="event.preventDefault();
+
                     document.getElementById('logout-form').submit();">
                         {{ __('Logout') }}
                     </a>
@@ -44,6 +49,7 @@
 
         <div class="container-fluid vh-100">
             <div class="row h-100">
+
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block navbar-dark sidebar collapse">
                     <div class="position-sticky pt-3">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -75,6 +81,7 @@
                         </div>
                     </div>
                 </nav>
+
                 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-3">
                     @yield('content')
                 </main>
@@ -84,4 +91,6 @@
     </div>
 </body>
 
+
 </html>
+

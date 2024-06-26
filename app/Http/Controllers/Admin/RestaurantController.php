@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Restaurant;
 
 class RestaurantController extends Controller
 {
@@ -14,7 +15,9 @@ class RestaurantController extends Controller
      */
     public function index()
     {
-        //
+        $restaurants = Restaurant::all();
+        //dd($restaurants);
+        return view('admin.restaurants.index', compact('restaurants'));
     }
 
     /**
