@@ -1,6 +1,17 @@
 @extends('layouts.admin')
 @section('content')
     <h1>ciao sono edit</h1>
+    {{-- Sezione messaggi di errore --}}
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    {{-- Sezione messaggi di errore --}}
     <form class="my-4" method="POST" action="{{ route('admin.restaurants.update', ['restaurant' => $restaurant->slug]) }}" enctype="multipart/form-data">
         @csrf
         @method('PUT')
@@ -31,7 +42,7 @@
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">New Email Address</label>
-            <input type="email" class="form-control" id="email" name="email" value="{{ old('email', $restaurant->email) }}">
+            <input type="text" class="form-control" id="email" name="email" value="{{ old('email', $restaurant->email) }}">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           </div>
         <button type="submit" class="btn btn-primary">Submit</button>

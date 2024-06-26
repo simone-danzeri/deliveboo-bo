@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Restaurant;
 use App\Models\Type;
 use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
 
 class RestaurantController extends Controller
 {
@@ -73,6 +74,22 @@ class RestaurantController extends Controller
      */
     public function update(Request $request, Restaurant $restaurant)
     {
+        // Validation
+        $request->validate(
+            [
+                'restaurant_name' => [
+                    'required',
+                    'max:249',
+                    Rule::unique('restaurants')->ignore($restaurant->id)
+                ],
+                'address' => 'required',
+                'phone' => 'nullable|max:20',
+                'img' => 'nullable|image|max:254',
+                'type_name' => 'nullable|exists:types,id',
+                'email' => 'nullable|email'
+            ]
+        );
+        // Validation
         $formData = $request->all();
         if ($request->hasFile('img')) {
             if($restaurant->img) {
