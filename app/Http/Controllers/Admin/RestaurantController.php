@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Restaurant;
 use App\Models\Type;
+use Illuminate\Support\Str;
 
 class RestaurantController extends Controller
 {
@@ -70,9 +71,19 @@ class RestaurantController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Restaurant $restaurant)
     {
-        //
+        $formData = $request->all();
+        if ($request->hasFile('img')) {
+            if($restaurant->img) {
+                Storage::delete($restaurant->img);
+            }
+            $img_path = Storage::disk('public')->put('restaurants', $formData['img']);
+            $formData['img'] = $img_path;
+        };
+        $restaurant['slug'] = Str::slug($formData['restaurant_name'], '-');
+        $restaurant->update($formData);
+        return redirect()->route('admin.restaurants.show', ['restaurant' => $restaurant->slug]);
     }
 
     /**

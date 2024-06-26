@@ -1,7 +1,9 @@
 @extends('layouts.admin')
 @section('content')
     <h1>ciao sono edit</h1>
-    <form>
+    <form class="my-4" method="POST" action="{{ route('admin.restaurants.update', ['restaurant' => $restaurant->slug]) }}" enctype="multipart/form-data">
+        @csrf
+        @method('PUT')
         <div class="mb-3">
           <label for="restaurant_name" class="form-label">Restaurant Name</label>
           <input type="text" class="form-control" id="restaurant_name" name="restaurant_name" value="{{old('restaurant_name', $restaurant->restaurant_name)}}">
