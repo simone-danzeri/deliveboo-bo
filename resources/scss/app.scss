@@ -3,7 +3,7 @@
 
 
 /* #region HEADER */
-    header, #sidebarMenu{
+    .ms-bg-primary{
         background-color: $main_color;
     }
 
@@ -14,5 +14,10 @@
     .ms-link{
         color: white;
         text-decoration: none;
+    }
+
+    .logo-deliveboo{
+        width: 5vw;
+        min-width: 70px
     }
 /* #endregion HEADER */
