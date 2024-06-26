@@ -9,6 +9,7 @@ use App\Models\Type;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
+
 class RestaurantController extends Controller
 {
     /**
@@ -18,7 +19,9 @@ class RestaurantController extends Controller
      */
     public function index()
     {
-        //
+        $restaurants = Restaurant::all();
+        //dd($restaurants);
+        return view('admin.restaurants.index', compact('restaurants'));
     }
 
     /**

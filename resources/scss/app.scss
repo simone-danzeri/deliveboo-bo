@@ -1,1 +1,18 @@
-@import '~bootstrap/scss/bootstrap'
+@use '_variables.scss' as *;
+@import '~bootstrap/scss/bootstrap';
+
+
+/* #region HEADER */
+    header, #sidebarMenu{
+        background-color: $main_color;
+    }
+
+    button.accordion-button, div.accordion-body{
+        background-color: $main_color !important;
+    }
+
+    .ms-link{
+        color: white;
+        text-decoration: none;
+    }
+/* #endregion HEADER */
