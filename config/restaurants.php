@@ -9,8 +9,43 @@ return [
         "phone" => "3896673429",
         "img" => "https://images.visititaly.eu/uploads/articoli/paragrafo/2024130333-migliori-ristoranti-dove-mangiare-piemonte.jpg",
         "email" => "lapergola@mail.it",
-        "vat_number" => "89457634764"
+        "vat_number" => "89457634764",
+        "type_id" => ""
     ],
+    [
+        "restaurant_name" => "Pane & Pomodoro",
+        "slug" => "pane-pomodoro",
+        "user_id" => "1",
+        "address" => "Via Martini, 7, Rovello Porro (MI)",
+        "phone" => "3456544567",
+        "img" => "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb2FHTEMkEqOipqHJkPIpgKTffAO4EryoGQWKs4H9OmHeIwU0EDu5fPL2RZCiDZJX-37g&usqp=CAU",
+        "email" => "paneepomodoro@mail.it",
+        "vat_number" => "57358943657",
+        "type_id" => ""
+    ],
+    [
+        "restaurant_name" => "I Due Ghiottoni",
+        "slug" => "i-due-ghiottoni",
+        "user_id" => "1",
+        "address" => "Via Aldo Moro, 3, Rovello Porro (MI)",
+        "phone" => "3896546454",
+        "img" => "https://cdn.norbaonline.it/static/2023/12/BA-S-50-ANNI-RISTORANTE-2GHIOTTONI-LOG.mp4.jpeg",
+        "email" => "idueghiottoni@mail.it",
+        "vat_number" => "95736492532",
+        "type_id" => ""
+    ],
+    [
+        "restaurant_name" => "Il Pescatore",
+        "slug" => "il-pescatore",
+        "user_id" => "1",
+        "address" => "Via Dante Alighieri, 15, Rovello Porro (MI)",
+        "phone" => "3345679832",
+        "img" => "https://media-cdn.tripadvisor.com/media/photo-s/25/4e/06/93/caption.jpg",
+        "email" => "ilpescatore@mail.it",
+        "vat_number" => "46274438956",
+        "type_id" => ""
+    ],
+
     // User 2
     [
         "restaurant_name" => "La Luna Del Porro",
@@ -20,7 +55,8 @@ return [
         "phone" => "3898538641",
         "img" => "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/dc/33/74/photo0jpg.jpg?w=300&h=-1&s=1.jpeg",
         "email" => "lalunadelporro@mail.it",
-        "vat_number" => "74629649052"
+        "vat_number" => "74629649052",
+        "type_id" => ""
     ],
     // User 3
     [
@@ -31,7 +67,8 @@ return [
         "phone" => "3459863411",
         "img" => "https://wips.plug.it/cips/paginegialle.it/magazine/cms/2018/10/migliori-ristoranti-roma.jpg?w=744&h=418&a=c",
         "email" => "daluciano@mail.it",
-        "vat_number" => "63626096437"
+        "vat_number" => "63626096437",
+        "type_id" => ""
     ],
     // User 4
     [
@@ -42,7 +79,8 @@ return [
         "phone" => "3765419840",
         "img" => "https://www.finedininglovers.it/sites/g/files/xknfdk1106/files/styles/article_1200_800_fallback/public/fdl_content_import_it/ristoranti-all-aperto-roma.jpg?itok=Yk1o4aDO",
         "email" => "ilmilione@mail.it",
-        "vat_number" => "63927407372"
+        "vat_number" => "63927407372",
+        "type_id" => ""
     ],
     // User 5
     [
@@ -53,6 +91,8 @@ return [
         "phone" => "3412643895",
         "img" => "cover-restaurant/9473758091.jpeg",
         "email" => "https://scattidigusto.b-cdn.net/wp-content/uploads/2022/07/Giardino-Eden-Ischia.jpeg",
-        "vat_number" => "46703526973"
+        "vat_number" => "46703526973",
+        "type_id" => ""
     ],
+
 ];
