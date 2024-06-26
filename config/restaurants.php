@@ -76,7 +76,7 @@ return [
     [
         "restaurant_name" => "SuperFritto",
         "slug" => "superfritto",
-        "user_id" => "",
+        "user_id" => "3",
         "address" => "Largo Kafka, 3, Rovello Porro (MI)",
         "phone" => "3512641893",
         "img" => "https://img.jakpost.net/c/2016/09/29/2016_09_29_12990_1475116504._large.jpg",
@@ -118,7 +118,7 @@ return [
     [
         "restaurant_name" => "American Diner",
         "slug" => "american-diner",
-        "user_id" => "",
+        "user_id" => "4",
         "address" => "Via I Maggio, 12, Rovello Porro (MI)",
         "phone" => "3895349840",
         "img" => "https://media.istockphoto.com/id/931308812/it/foto/selezione-di-cibo-americano.jpg?s=612x612&w=0&k=20&c=Tguk9EDkQ7JyfNBO19VNS1PUrhOetYhgFrWTa9TEX0o=",
@@ -128,7 +128,7 @@ return [
     [
         "restaurant_name" => "McBoonald's",
         "slug" => "mcboonalds",
-        "user_id" => "",
+        "user_id" => "4",
         "address" => "Piazza San Giacomo, 12, Rovello Porro (MI)",
         "phone" => "3291345841",
         "img" => "https://www.eatthis.com/wp-content/uploads/sites/4/2022/06/fast-food-assortment-soda.jpg?quality=82&strip=1",
