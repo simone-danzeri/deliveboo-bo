@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Restaurant;
 use App\Models\Type;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
@@ -20,8 +22,9 @@ class RestaurantController extends Controller
     public function index()
     {
         $restaurants = Restaurant::all();
+        $user = Auth::user();
         //dd($restaurants);
-        return view('admin.restaurants.index', compact('restaurants'));
+        return view('admin.restaurants.index', compact('restaurants', 'user'));
     }
 
     /**
@@ -65,7 +68,8 @@ class RestaurantController extends Controller
     public function edit(Restaurant $restaurant)
     {
         $types = Type::all();
-        return view('admin.restaurants.edit', compact('restaurant', 'types'));
+        $user = Auth::user();
+        return view('admin.restaurants.edit', compact('restaurant', 'types', 'user'));
     }
 
     /**
