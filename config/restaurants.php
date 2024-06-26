@@ -138,5 +138,49 @@ return [
         "vat_number" => "46703526973",
         "type_id" => ""
     ],
+    [
+        "restaurant_name" => "El Sombrero Loco",
+        "slug" => "el-sombrero-loco",
+        "user_id" => "5",
+        "address" => "Via Ventimiglia, 12, Rovello Porro (MI)",
+        "phone" => "3298759375",
+        "img" => "https://qul.imgix.net/6ccfc887-22dd-4d8d-b375-49abc238a36d/50992_landscape.jpg?auto=format&w=781",
+        "email" => "elsombreroloco@mail.it",
+        "vat_number" => "34539554423",
+        "type_id" => ""
+    ],
+    [
+        "restaurant_name" => "Delicias y Gustos",
+        "slug" => "delicias-y-gustos",
+        "user_id" => "5",
+        "address" => "Piazza della Liberta, 25, Rovello Porro (MI)",
+        "phone" => "3298765432",
+        "img" => "https://res.cloudinary.com/tf-lab/image/upload/restaurant/b703fe1e-2806-41c8-be41-44567edac9d6/668c6bc4-94ec-465a-9ab3-1866b48adf5f.jpg",
+        "email" => "deliciasygustos@mail.it",
+        "vat_number" => "34567484234",
+        "type_id" => ""
+    ],
+    [
+        "restaurant_name" => "Tierra Picante",
+        "slug" => "tierra-picante",
+        "user_id" => "5",
+        "address" => "Corso Vittorio Emanuele 41, Rovello Porro (MI)",
+        "phone" => "3248242367",
+        "img" => "https://c8.alamy.com/compit/2kdwrwt/miami-beach-florida-normandy-isle-7ty-un-ristorante-venezuelano-ristoranti-mangiare-fuori-informale-caffe-caffe-caffe-bistro-cibo-interni-2kdwrwt.jpg",
+        "email" => "tierrapicante@mail.it",
+        "vat_number" => "46455225535",
+        "type_id" => ""
+    ],
+    [
+        "restaurant_name"=> "Empanadas Parce",
+        "slug"=> "empanadas-parce",
+        "user_id" => "5",
+        "address"=> "Via delle Rose, 12, Rovello Porro (MI)",
+        "phone" => "3271234567",
+        "img"=> "https://c8.alamy.com/compit/pw22pf/granada-spagna-18-ottobre-2017-tipico-ristorante-spagnolo-con-cucina-nazionale-di-cucina-spagnola-nel-centro-storico-della-citta-pw22pf.jpg",
+        "email"=> "empanadasparce@mail.it",
+        "vat_number" => "73758678901",
+        "type_id" => ""
+    ],
 
 ];
