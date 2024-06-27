@@ -29,6 +29,7 @@ Route::middleware(['auth', 'verified'])
 ->prefix('admin')
 ->group(function() {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/negate-access', [DashboardController::class, 'negate'])->name('negate');
     Route::resource('restaurants', RestaurantController::class)->parameters([
         'restaurants' => 'restaurant:slug'
     ]);

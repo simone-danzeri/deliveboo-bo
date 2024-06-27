@@ -13,4 +13,10 @@ class DashboardController extends Controller
 
         return view('admin.dashboard', compact('user'));
     }
+
+    public function negate() {
+        $user = Auth::user();
+
+        return view('admin.negate', compact('user'));
+    }
 }

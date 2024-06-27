@@ -54,18 +54,18 @@ class RestaurantController extends Controller
             'email' => 'required|email|max:255',
             'img' => 'nullable|image|max:2048',
         ]);
-   
+
         $formData = $request->all();
-        
-        $user = Auth::user();   
+
+        $user = Auth::user();
         $newRestaurant = new Restaurant();
         $newRestaurant->fill($formData);
-        $newRestaurant['slug'] = Str::slug($formData['restaurant_name'], '-'); 
+        $newRestaurant['slug'] = Str::slug($formData['restaurant_name'], '-');
         $newRestaurant->user_id = $user->id;
         $newRestaurant->save();
-    
+
         return redirect()->route('admin.restaurants.show', ['restaurant' => $newRestaurant->slug]);
-     
+
     }
 
     /**
@@ -75,9 +75,13 @@ class RestaurantController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Restaurant $restaurant)
-    {   
+    {
         $user = Auth::user();
-        return view('admin.restaurants.show', compact('restaurant', 'user'));
+        if ($restaurant->user_id == $user->id){
+            return view('admin.restaurants.show', compact('restaurant', 'user'));
+        } else {
+            return view('admin.negate', compact('user'));
+        }
     }
 
     /**
@@ -90,7 +94,11 @@ class RestaurantController extends Controller
     {
         $types = Type::all();
         $user = Auth::user();
-        return view('admin.restaurants.edit', compact('restaurant', 'types', 'user'));
+        if ($restaurant->user_id == $user->id){
+            return view('admin.restaurants.edit', compact('restaurant', 'types', 'user'));
+        } else {
+            return view('admin.negate', compact('user'));
+        }
     }
 
     /**
