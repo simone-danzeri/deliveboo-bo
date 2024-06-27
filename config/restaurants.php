@@ -8,6 +8,7 @@ return [
         "address" => "Via dei Fiori, 3, Rovello Porro (MI)",
         "phone" => "3896673429",
         "img" => "cover_restaurant/24y188dh8912hh8e.jpeg",
+        "email" => "lapergola@mail.it",
         "vat_number" => "89457634764"
     ],
     [
