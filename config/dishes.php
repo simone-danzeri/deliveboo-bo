@@ -1,5 +1,6 @@
 <?php
 return [
+    //primi piatti
     [
         'restaurant_id' => 1,
         'dish_name' => 'Spaghetti Carbonara',
@@ -10,6 +11,8 @@ return [
         'description' => 'Traditional Italian pasta dish with eggs, cheese, pancetta, and pepper.',
         'is_vegetarian' => false
     ],
+    //secondi piatti
+    //pizze
     [
         'restaurant_id' => 1,
         'dish_name' => 'Margherita Pizza',
@@ -20,6 +23,8 @@ return [
         'description' => 'Classic pizza with tomato sauce, mozzarella cheese, and fresh basil.',
         'is_vegetarian' => true
     ],
+    //panini
+    //insalata
     [
         'restaurant_id' => 2,
         'dish_name' => 'Caesar Salad',
@@ -30,4 +35,6 @@ return [
         'description' => 'Crispy romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.',
         'is_vegetarian' => false
     ]
+    //dolci
+    //bevande
 ];
