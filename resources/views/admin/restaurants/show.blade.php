@@ -13,7 +13,7 @@
 
     <div class="card">
         <div class="card-header">
-            <h2>Restaurante Detagli</h2>
+            <h2>Restaurant Dettagli</h2>
         </div>
         <div class="card-body">
             <div class="mb-3">

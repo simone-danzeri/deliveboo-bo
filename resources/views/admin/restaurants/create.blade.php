@@ -18,8 +18,8 @@
             <form enctype="multipart/form-data" action="{{ route('admin.restaurants.store') }}" method="POST">
                 @csrf
                 <div class="mb-3">
-                    <label for="name" class="form-label">Nuovo Ristorante</label>
-                    <input type="text" class="form-control" id="name" name="name">
+                    <label for="resaturant_name" class="form-label">Nuovo Ristorante</label>
+                    <input type="text" class="form-control" id="restaurant_name" name="restaurant_name">
                 </div>
             
                 <div class="mb-3">

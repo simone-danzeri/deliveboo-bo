@@ -22,6 +22,17 @@ return [
         'is_vegetarian' => false
     ],
     [
+        'restaurant_id' => 1,
+        'dish_name' => 'Verdure Grigliate',
+        'category_id' => 1,
+        'dish_photo' => 'cover_dish/verduregrigliatesdfsfds.jpg',
+        'is_visible' => true,
+        'price' => 3.00,
+        'description' => 'Mix di verdure grigliate',
+        'is_vegetarian' => true
+    ],
+
+    [
         'restaurant_id' => 2,
         'dish_name' => 'Involtini Primavera',
         'category_id' => 1,
@@ -202,7 +213,131 @@ return [
         'description' => 'La classica pasta con uova, guanciale e pecorino.',
         'is_vegetarian' => false
     ],
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Trofie al Pesto Genovese',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/pastaalpestogsdfs.jpeg',
+        'is_visible' => true,
+        'price' => 8.50,
+        'description' => 'Pasta fresca con pesto alla genovese',
+        'is_vegetarian' => true
+    ],
+
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Roll al salmone',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/rollsalmoneafasfa.jpg',
+        'is_visible' => true,
+        'price' => 17.00,
+        'description' => 'Roll al salmone',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Lasagne alla Bolognese',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/lasagneallabolognesefghfghfgh.jpg',
+        'is_visible' => true,
+        'price' => 10.00,
+        'description' => 'Strati di pasta con ragù di carne, besciamella e parmigiano.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Ravioli di Ricotta e Spinaci',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/Ravioliricottaspinacisdfsdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 9.50,
+        'description' => 'Ravioli fatti a mano ripieni di ricotta e spinaci.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Penne all\'Arrabbiata',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish\pennearrabbiatassdfsdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Pasta piccante con pomodoro, aglio e peperoncino.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 4,
+        'dish_name' => 'Risotto alla Milanese',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/risottozafferanosdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Risotto allo zafferano, tipico della cucina milanese.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 4,
+        'dish_name' => 'Tagliatelle ai Funghi Porcini',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/tagliatelleaifunghisdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Pasta fresca con funghi porcini.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Gnocchi al Gorgonzola',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gnocchigorgoazfzsd.jpg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Gnocchi di patate con salsa al gorgonzola.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Orecchiette con Cime di Rapa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/orecchiettecimedirapafsfsd.jpg',
+        'is_visible' => true,
+        'price' => 8.50,
+        'description' => 'Pasta tradizionale pugliese con cime di rapa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Fettuccine Alfredo',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/fettuccinealfredosdfsd.jpg',
+        'is_visible' => true,
+        'price' => 8.50,
+        'description' => 'Fettuccine con burro e parmigiano.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Pasta e Fagioli',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/pastafagiolisffsdfd.jpg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Piatto tradizionale italiano con pasta e fagioli.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Linguine ai Frutti di Mare',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/linguinefruttidimarefsdd.jpg',
+        'is_visible' => true,
+        'price' => 13.00,
+        'description' => 'Pasta con frutti di mare freschi.',
+        'is_vegetarian' => false
+    ],
+
     //secondi piatti
+
+
     //pizze
     [
         'restaurant_id' => 9,
@@ -214,6 +349,50 @@ return [
         'description' => 'La più famosa pizza del mondo.',
         'is_vegetarian' => true
     ],
+  
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Pizza Quattro Stagioni',
+        'category_id' => 4,
+        'dish_photo' => 'cover_dish/pizza4stagionisdfsd.jpg',
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Pizza con pomodori, mozzarella, prosciutto, funghi, carciofi e olive.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Pizza Quattro Formaggi',
+        'category_id' => 4,
+        'dish_photo' => 'cover_dish/pizza4formaggisdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Pizza con quattro diversi formaggi.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Pizza Diavola',
+        'category_id' => 4,
+        'dish_photo' => 'cover_dish/pizza-alla-diavolafsdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 6.50,
+        'description' => 'Pizza con salame piccante.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Pizza Capricciosa',
+        'category_id' => 4,
+        'dish_photo' => 'cover_dish/pizzacapricciosafsdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Pizza con pomodoro, mozzarella, prosciutto, carciofi, olive e uovo.',
+        'is_vegetarian' => false
+    ],
+  
+    
+    
     //panini
     [
         'restaurant_id' => 8,

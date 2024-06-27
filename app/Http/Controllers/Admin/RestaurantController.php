@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
 
-
 class RestaurantController extends Controller
 {
     /**
@@ -34,7 +33,8 @@ class RestaurantController extends Controller
      */
     public function create()
     {
-        return view('admin.restaurants.create');
+        $user = Auth::user();
+        return view('admin.restaurants.create', compact( 'user'));
     }
 
     /**
@@ -43,28 +43,27 @@ class RestaurantController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Restaurant $restaurant)
     {
         $request->validate([
-            'name' => 'required|string|max:255',
+            'restaurant_name' => 'required|string|max:255',
             'address' => 'required|string|max:255',
             'phone' => 'required|string|max:20',
             'vat_number' => 'required|string|max:20',
             'email' => 'required|email|max:255',
             'img' => 'nullable|image|max:2048',
         ]);
-
+   
         $formData = $request->all();
-        $user = Auth::user();
-       
+        
+        $user = Auth::user();   
         $newRestaurant = new Restaurant();
         $newRestaurant->fill($formData);
-       
+        $newRestaurant['slug'] = Str::slug($formData['restaurant_name'], '-'); 
         $newRestaurant->user_id = $user->id;
-    
         $newRestaurant->save();
-
-        return redirect()->route('admin.restarurant.show',  ['restaurant' => $newRestaurant->id] );
+    
+        return redirect()->route('admin.restaurants.show', ['restaurant' => $newRestaurant->slug]);
      
     }
 
