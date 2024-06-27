@@ -54,6 +54,14 @@
 
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block ms-bg-primary sidebar collapse">
                     <div class="position-sticky pt-3">
+                        @if (!Route::is('admin.dashboard'))
+                        <a href="{{ route('admin.dashboard')}}" class="d-block btn ml-2 border border-light my-3 text-white">
+                            Back to Dashboard
+                        </a>
+                        @endif
+                        <a href="{{route('admin.restaurants.create')}}" class="d-block btn ml-2 border border-light my-3 text-white">
+                            Add new Restaurant
+                        </a>
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             @foreach ($user->restaurants as $rest)
                                 <div class="accordion-item">
@@ -69,18 +77,18 @@
                                                     <ul class="list-unstyled">
                                                         <li>
                                                             <a href="{{route('admin.restaurants.show' , ['restaurant' => $rest->slug])}}" class="ms-link">
-                                                                <i class="fa-solid fa-earth me-2"></i>
+
                                                                 Show details
                                                             </a>
                                                         </li>
                                                         <li>
                                                             <a href="{{route('admin.restaurants.edit', ['restaurant' => $rest->slug])}}" class="ms-link">
-                                                                <i class="fa-solid fa-earth me-2"></i>
+
                                                                 Edit this restaurant
                                                             </a>
                                                         </li>
                                                         <li>
-                                                            <i class="fa-solid fa-earth me-2"></i>
+
                                                             <a href="#" class="ms-link">Show Menu</a>
                                                         </li>
                                                     </ul>
@@ -90,7 +98,6 @@
                                     </div>
                                 </div>
                             @endforeach
-                                <a href="{{route('admin.restaurants.create')}}" class="d-block btn ml-2 border border-light my-3 text-white">Add new Restaurant</a>
                         </div>
 
                     </div>
