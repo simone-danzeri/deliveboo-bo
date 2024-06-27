@@ -1,6 +1,7 @@
 <?php
 
 return [
+        'Antipasti',
         'Primi Piatti',
         'Secondi Piatti',
         'Pizze',
