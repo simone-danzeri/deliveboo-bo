@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Category;
 
 class CategorySeeder extends Seeder
 {
@@ -14,6 +15,11 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        //
+        $categoriesArray = config('categories');
+        foreach($categoriesArray as $eachCategory) {
+            $newCategory = new Category();
+            $newCategory->name = $eachCategory;
+            $newCategory->save();
+        }
     }
 }

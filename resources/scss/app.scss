@@ -1,1 +1,28 @@
-@import '~bootstrap/scss/bootstrap'
+@use '_variables.scss' as *;
+@import '~bootstrap/scss/bootstrap';
+
+
+/* #region HEADER */
+    .ms-bg-primary{
+        background-color: $main_color;
+    }
+
+    button.accordion-button, div.accordion-body{
+        background-color: $main_color !important;
+    }
+
+    .ms-link{
+        color: white;
+        text-decoration: none;
+    }
+
+    .logo-deliveboo{
+        width: 5vw;
+        min-width: 70px
+    }
+
+    .accordion-button.collapsed::after, .accordion-button::after {
+        filter: invert(1);
+        -webkit-filter: invert(1);
+    }
+/* #endregion HEADER */
