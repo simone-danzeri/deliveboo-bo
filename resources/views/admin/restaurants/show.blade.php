@@ -20,12 +20,15 @@
                 <p class="form-control">{{ $restaurant->restaurant_name }}</p>
             </div>
             <div class="mb-3">
+                <p class="form-control">{{ $restaurant->slug }}</p>
+            </div>
+            {{-- <div class="mb-3">
                 @if($restaurant->img)
                     <img src="{{ asset('storage/' . $restaurant->img) }}" alt="{{ $restaurant->restaurant_name }}" class="img-fluid">
                 @else
                     <p>No image disponibile</p>
                 @endif
-            </div>
+            </div> --}}
             {{-- <div class="mb-3">
                 <p class="form-control">{{ $restaurant->type->type_name ?? 'Not specified' }}</p>
             </div> --}}
@@ -38,9 +41,6 @@
             </div>
             <div class="mb-3">
                 <p class="form-control">{{ $restaurant->email }}</p>
-            </div>
-            <div class="mb-3">
-                <p class="form-control">{{ $restaurant->slug }}</p>
             </div>
         </div>
 
