@@ -18,6 +18,8 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = 'admin/dashboard';
+    // CREATE mi rimanda al form di creazione di un nuovo ristorante
+    public const CREATE = 'admin/restaurants/create';
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
