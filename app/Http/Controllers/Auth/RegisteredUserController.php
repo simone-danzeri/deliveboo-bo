@@ -46,6 +46,8 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+        // Ho creato la const pubblica CREATE in App/Provider/RouteServiceProvider
+        // return redirect(RouteServiceProvider::HOME);
+        return redirect(RouteServiceProvider::CREATE);
     }
 }
