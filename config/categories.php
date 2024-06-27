@@ -1,10 +1,11 @@
 <?php
 
-return [    
+return [
         'Primi Piatti',
         'Secondi Piatti',
+        'Pizze',
         'Panini',
+        'Insalate',
         'Dolci',
         'Bevande',
-        'Insalate',    
-];  
+];
