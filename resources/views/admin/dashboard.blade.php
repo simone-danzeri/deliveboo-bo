@@ -17,7 +17,7 @@
                     </div>
                     @endif
 
-                    <h1>Ciao {{ $user->name }}!</h1>
+                    <h1>Hello {{ $user->name }}!</h1>
                 </div>
             </div>
         </div>

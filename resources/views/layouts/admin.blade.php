@@ -21,7 +21,7 @@
 
 
 
-    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+    @vite(['resources/js/app.js'])
 
 </head>
 
@@ -29,13 +29,13 @@
     <div id="app">
 
 
-        <header class="navbar sticky-top flex-md-nowrap p-2 shadow ms-bg-primary justify-content-space-between">
+        <header class="navbar navbar-dark sticky-top flex-md-nowrap p-2 shadow ms-bg-primary justify-content-space-between">
             <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 text-white" href="/">
                 <div class="logo-deliveboo">
-                    <img src="../delivebooLogo.svg" alt="" class="w-100">
+                    <img src="{{ asset('delivebooLogo.svg') }}" alt="" class="w-100">
                 </div>
             </a>
             <div class="navbar-nav">
@@ -70,12 +70,22 @@
                                         <div class="accordion-body">
                                             <ul class="nav flex-column">
                                                 <li class="text-white">
-                                                    <ul>
+                                                    <ul class="list-unstyled">
                                                         <li>
-                                                            <a href="#" class="ms-link">Visualizza dettagli</a>
+                                                            <a href="#" class="ms-link">
+                                                                <i class="fa-solid fa-earth me-2"></i>
+                                                                Show details
+                                                            </a>
                                                         </li>
                                                         <li>
-                                                            <a href="{{route('admin.restaurants.edit', ['restaurant' => $rest->slug])}}" class="ms-link"><i class="fa-solid fa"></i>Modifica</a>
+                                                            <a href="{{route('admin.restaurants.edit', ['restaurant' => $rest->slug])}}" class="ms-link">
+                                                                <i class="fa-solid fa-earth me-2"></i>
+                                                                Edit this restaurant
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-solid fa-earth me-2"></i>
+                                                            <a href="#" class="ms-link">Show Menu</a>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -84,6 +94,7 @@
                                     </div>
                                 </div>
                             @endforeach
+                                <a href="#" class="d-block btn ml-2 border border-light my-3 text-white">Add new Restaurant</a>
                         </div>
 
                     </div>

@@ -20,4 +20,9 @@
         width: 5vw;
         min-width: 70px
     }
+
+    .accordion-button.collapsed::after, .accordion-button::after {
+        filter: invert(1);
+        -webkit-filter: invert(1);
+    }
 /* #endregion HEADER */
