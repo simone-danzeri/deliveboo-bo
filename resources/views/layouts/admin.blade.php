@@ -19,15 +19,12 @@
 
     <!-- Usando Vite -->
 
-
-
     @vite(['resources/js/app.js'])
 
 </head>
 
 <body>
     <div id="app">
-
 
         <header class="navbar navbar-dark sticky-top flex-md-nowrap p-2 shadow ms-bg-primary justify-content-space-between">
             <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +51,6 @@
 
         <div class="container-fluid vh-100">
             <div class="row h-100">
-
 
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block ms-bg-primary sidebar collapse">
                     <div class="position-sticky pt-3">
@@ -105,12 +101,11 @@
                 </main>
             </div>
         </div>
-
-
     </div>
 </body>
 
 
 </html>
+
 
 
