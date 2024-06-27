@@ -72,7 +72,7 @@
                                                 <li class="text-white">
                                                     <ul class="list-unstyled">
                                                         <li>
-                                                            <a href="#" class="ms-link">
+                                                            <a href="{{route('admin.restaurants.show' , ['restaurant' => $rest->slug])}}" class="ms-link">
                                                                 <i class="fa-solid fa-earth me-2"></i>
                                                                 Show details
                                                             </a>
