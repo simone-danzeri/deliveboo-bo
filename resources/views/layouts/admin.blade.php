@@ -90,7 +90,7 @@
                                     </div>
                                 </div>
                             @endforeach
-                                <a href="#" class="d-block btn ml-2 border border-light my-3 text-white">Add new Restaurant</a>
+                                <a href="{{route('admin.restaurants.create')}}" class="d-block btn ml-2 border border-light my-3 text-white">Add new Restaurant</a>
                         </div>
 
                     </div>
