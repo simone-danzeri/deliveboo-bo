@@ -26,23 +26,25 @@
                     <p>No image disponibile</p>
                 @endif
             </div>
-            {{-- <div class="mb-3">
+            <div class="mb-3">
                 <p class="form-control">{{ $restaurant->type->type_name ?? 'Not specified' }}</p>
-            </div> --}}
+            </div>
             <div class="mb-3">
                 <p class="form-control">{{ $restaurant->address }}</p>
             </div>
-    
             <div class="mb-3">
                 <p class="form-control">{{ $restaurant->phone }}</p>
             </div>
             <div class="mb-3">
                 <p class="form-control">{{ $restaurant->email }}</p>
             </div>
-            <div class="mb-3">
-                <p class="form-control">{{ $restaurant->slug }}</p>
-            </div>
         </div>
-
+        <div class="card-footer">
+            <form action="{{ route('restaurants.destroy', $restaurant->id) }}" method="POST" onsubmit="return confirm('Sei sicuro di cancellare questo?');">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger">Eliminare</button>
+            </form>
+        </div>
     </div>
 @endsection
