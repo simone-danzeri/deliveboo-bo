@@ -337,7 +337,326 @@ return [
 
     //secondi piatti
 
-
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Scaloppine al Limone',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/scaloppineasdeghuj.jpeg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Pollo e limone in un piatto di ceramica.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Bistecca ai Ferri',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Vitello almeno credo.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Hayashi',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/hayashiddchdchbx.jpeg',
+        'is_visible' => true,
+        'price' => 15.50,
+        'description' => null,
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Okonomiyaki',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/okonomiyakischdx.jpeg',
+        'is_visible' => true,
+        'price' => 8.50,
+        'description' => 'Sembra una frittata ma non lo è',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Straccetti di Manzo con Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/manzoverdurejascbhrc.jpg',
+        'is_visible' => true,
+        'price' => 14.50,
+        'description' => 'Manzo e verdure grigliate',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Bistecca ai Ferri',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Vitello almeno credo.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Zuppa di Pomodoro',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zuppapomodorodsjvrbdic.jpeg',
+        'is_visible' => true,
+        'price' => 6.50,
+        'description' => 'Pomodoro zuppato.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Zucchine Ripiene',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zucchineripienesdchb.jpeg',
+        'is_visible' => true,
+        'price' => 10.00,
+        'description' => 'Zucchine con ripieno di carne',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Polpette di Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Palline di verdure fritte con cuore di formaggio filante.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 4,
+        'dish_name' => 'Scaloppine al Limone',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/scaloppineasdeghuj.jpeg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Pollo e limone in un piatto di ceramica.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 4,
+        'dish_name' => 'Zucchine Ripiene',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zucchineripienesdchb.jpeg',
+        'is_visible' => true,
+        'price' => 9.50,
+        'description' => 'Zucchine con ripieno di carne',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Cotoletta di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/cotolettapescedjcdec.jpeg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Pesce di dubbia natura ma fritto.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Zuppa di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zuppapescedcnrhbc.jpeg',
+        'is_visible' => true,
+        'price' => 17.50,
+        'description' => 'Zuppa di pesce con pomodorini e verdure miste.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Branzino in umido',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/realbranzinodcecdced.jpeg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Il branzino come quello della mensa della scuola.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Bistecca ai Ferri',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
+        'is_visible' => true,
+        'price' => 8.00,
+        'description' => 'Vitello almeno credo.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Polpettone',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/polpettoneadcda.jpeg',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => null,
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Cotoletta di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/cotolettapescedjcdec.jpeg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Pesce di dubbia natura ma fritto.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Hayashi',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/hayashiddchdchbx.jpeg',
+        'is_visible' => true,
+        'price' => 11.50,
+        'description' => null,
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Okonomiyaki',
+        'category_id' => 2,
+        'dish_photo' => null,
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Sembra una frittata ma non lo è',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 8,
+        'dish_name' => 'Polpette di Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
+        'is_visible' => true,
+        'price' => 4.00,
+        'description' => 'Palline di verdure fritte con cuore di formaggio filante.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Zuppa di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zuppapesce2dcdiced.jpeg',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Zuppa di pesce con pomodorini e verdure miste ma migliore di quella di prima',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Straccetti di Manzo con Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/manzoverdurejascbhrc.jpg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Manzo e verdure grigliate',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Zuppa di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zuppapesce2dcdiced.jpeg',
+        'is_visible' => true,
+        'price' => 14.00,
+        'description' => 'Zuppa di pesce con pomodorini e verdure miste ma molto migliore di quella di prima',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Straccetti di Manzo con Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/manzoverdurejascbhrc.jpg',
+        'is_visible' => true,
+        'price' => 20.50,
+        'description' => 'Manzo e verdure grigliate',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Bistecca ai Ferri',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Vitello almeno credo.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Hayashi',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/hayashiddchdchbx.jpeg',
+        'is_visible' => true,
+        'price' => 10.50,
+        'description' => null,
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Okonomiyaki',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/okonomiyakischdx.jpeg',
+        'is_visible' => true,
+        'price' => 15.00,
+        'description' => 'Sembra una frittata ma non lo è',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Polpette di Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Palline di verdure fritte con cuore di formaggio filante.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Scaloppine al Limone',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/scaloppineasdeghuj.jpeg',
+        'is_visible' => true,
+        'price' => 10.50,
+        'description' => 'Pollo e limone in un piatto di ceramica.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Polpette di Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
+        'is_visible' => true,
+        'price' => 9.50,
+        'description' => 'Palline di verdure fritte con cuore di formaggio filante.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Zuppa di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zuppapesce2dcdiced.jpeg',
+        'is_visible' => true,
+        'price' => 10.00,
+        'description' => 'Zuppa di pesce con pomodorini e verdure miste.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Bistecca ai Ferri',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ferribisteccafcdgvbhjiko.jpeg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Vitello almeno credo.',
+        'is_vegetarian' => false
+    ],
     //pizze
     [
         'restaurant_id' => 9,
@@ -349,7 +668,7 @@ return [
         'description' => 'La più famosa pizza del mondo.',
         'is_vegetarian' => true
     ],
-  
+
     [
         'restaurant_id' => 9,
         'dish_name' => 'Pizza Quattro Stagioni',
@@ -390,9 +709,9 @@ return [
         'description' => 'Pizza con pomodoro, mozzarella, prosciutto, carciofi, olive e uovo.',
         'is_vegetarian' => false
     ],
-  
-    
-    
+
+
+
     //panini
     [
         'restaurant_id' => 8,
