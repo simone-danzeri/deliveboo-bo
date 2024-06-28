@@ -17,4 +17,6 @@ class Dish extends Model
     public function category() {
         return $this->belongsTo(Category::class);
     }
+
+    protected $fillable = ['restaurant_id', 'dish_name', 'dish_slug', 'category_id', 'dish_photo', 'is_visible', 'price', 'description', 'is_vegetarian'];
 }

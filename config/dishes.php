@@ -651,7 +651,7 @@ return [
     [
         'restaurant_id' => 18,
         'dish_name' => 'Carnitas Asadas',
-        'category_id' => 5,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/carnitasasadashjgjdjdkkgklk.jpg',
         'is_visible' => true,
         'price' => 9.00,
@@ -671,7 +671,7 @@ return [
     [
         'restaurant_id' => 19,
         'dish_name' => 'Chicharrón en Salsa Verde',
-        'category_id' => 5,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/chicharrosalsaverdelkjh.jpg',
         'is_visible' => true,
         'price' => 11.00,
@@ -681,7 +681,7 @@ return [
     [
         'restaurant_id' => 19,
         'dish_name' => 'Puntas de Filete',
-        'category_id' => 5,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/puntasdefiletegusdr.jpeg',
         'is_visible' => true,
         'price' => 12.00,
@@ -691,7 +691,7 @@ return [
     [
         'restaurant_id' => 19,
         'dish_name' => 'Pulpo a la Mexicana',
-        'category_id' => 5,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/pulpoalamexicana.jpeg',
         'is_visible' => true,
         'price' => 10.00,
@@ -701,7 +701,7 @@ return [
     [
         'restaurant_id' => 17,
         'dish_name' => 'Relleno negro',
-        'category_id' => 5,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/rellenonegrogfdr.jpeg',
         'is_visible' => true,
         'price' => 12.00,
@@ -711,7 +711,7 @@ return [
     [
         'restaurant_id' => 17,
         'dish_name' => 'Cochinita Pibil',
-        'category_id' => 5,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/cochinitapibildagsgsags.jpeg',
         'is_visible' => true,
         'price' => 12.00,
@@ -721,7 +721,7 @@ return [
     [
         'restaurant_id' => 17,
         'dish_name' => 'Puerco en salsa verde',
-        'category_id' => 5,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/puercosalsaverdepolikuj.jpeg',
         'is_visible' => true,
         'price' => 11.00,
@@ -729,9 +729,59 @@ return [
         'is_vegetarian' => false
     ],
     [
+        'restaurant_id' => 16,
+        'dish_name' => 'Relleno negro',
+        'category_id' => 3,
+        'dish_photo' => 'cover_dish/rellenonegrogfdr.jpeg',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Tenera carne di maiale marinata e cotta lentamente in una salsa densa di pepe nero',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 16,
+        'dish_name' => 'Cochinita Pibil',
+        'category_id' => 3,
+        'dish_photo' => 'cover_dish/cochinitapibildagsgsags.jpeg',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Preparata con carne di maiale marinata in una miscela di achiote, cotta lentamente in un forno sotterraneo o in un cestello di metallo',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 16,
+        'dish_name' => 'Puerco en salsa verde',
+        'category_id' => 3,
+        'dish_photo' => 'cover_dish/puercosalsaverdepolikuj.jpeg',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Succulenti bocconcini di maiale cotti lentamente in una salsa verde piccante e aromatica.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 16,
+        'dish_name' => 'Puntas de Filete',
+        'category_id' => 3,
+        'dish_photo' => 'cover_dish/puntasdefiletegusdr.jpeg',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Punte di filetto di manzo saltate in padella con cipolla e riso',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 16,
+        'dish_name' => 'Pulpo a la Mexicana',
+        'category_id' => 3,
+        'dish_photo' => 'cover_dish/pulpoalamexicana.jpeg',
+        'is_visible' => true,
+        'price' => 10.00,
+        'description' => 'Polpo cotto in una salsa di pomodoro con cipolla spesso servito con riso',
+        'is_vegetarian' => false
+    ],
+    [
         'restaurant_id' => 1,
         'dish_name' => 'Scaloppine al Limone',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/scaloppineasdeghuj.jpeg',
         'is_visible' => true,
         'price' => 12.50,
@@ -741,7 +791,7 @@ return [
     [
         'restaurant_id' => 1,
         'dish_name' => 'Bistecca ai Ferri',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
         'is_visible' => true,
         'price' => 9.00,
@@ -751,7 +801,7 @@ return [
     [
         'restaurant_id' => 2,
         'dish_name' => 'Hayashi',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/hayashiddchdchbx.jpeg',
         'is_visible' => true,
         'price' => 15.50,
@@ -761,7 +811,7 @@ return [
     [
         'restaurant_id' => 2,
         'dish_name' => 'Okonomiyaki',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/okonomiyakischdx.jpeg',
         'is_visible' => true,
         'price' => 8.50,
@@ -771,7 +821,7 @@ return [
     [
         'restaurant_id' => 2,
         'dish_name' => 'Straccetti di Manzo con Verdure',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/manzoverdurejascbhrc.jpg',
         'is_visible' => true,
         'price' => 14.50,
@@ -781,7 +831,7 @@ return [
     [
         'restaurant_id' => 3,
         'dish_name' => 'Bistecca ai Ferri',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
         'is_visible' => true,
         'price' => 7.50,
@@ -791,7 +841,7 @@ return [
     [
         'restaurant_id' => 3,
         'dish_name' => 'Zuppa di Pomodoro',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/zuppapomodorodsjvrbdic.jpeg',
         'is_visible' => true,
         'price' => 6.50,
@@ -801,7 +851,7 @@ return [
     [
         'restaurant_id' => 3,
         'dish_name' => 'Zucchine Ripiene',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/zucchineripienesdchb.jpeg',
         'is_visible' => true,
         'price' => 10.00,
@@ -811,7 +861,7 @@ return [
     [
         'restaurant_id' => 3,
         'dish_name' => 'Polpette di Verdure',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
         'is_visible' => true,
         'price' => 7.00,
@@ -821,7 +871,7 @@ return [
     [
         'restaurant_id' => 4,
         'dish_name' => 'Scaloppine al Limone',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/scaloppineasdeghuj.jpeg',
         'is_visible' => true,
         'price' => 12.50,
@@ -831,7 +881,7 @@ return [
     [
         'restaurant_id' => 4,
         'dish_name' => 'Zucchine Ripiene',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/zucchineripienesdchb.jpeg',
         'is_visible' => true,
         'price' => 9.50,
@@ -841,7 +891,7 @@ return [
     [
         'restaurant_id' => 5,
         'dish_name' => 'Cotoletta di Pesce',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/cotolettapescedjcdec.jpeg',
         'is_visible' => true,
         'price' => 12.50,
@@ -851,7 +901,7 @@ return [
     [
         'restaurant_id' => 5,
         'dish_name' => 'Zuppa di Pesce',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/zuppapescedcnrhbc.jpeg',
         'is_visible' => true,
         'price' => 17.50,
@@ -861,7 +911,7 @@ return [
     [
         'restaurant_id' => 5,
         'dish_name' => 'Branzino in umido',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/realbranzinodcecdced.jpeg',
         'is_visible' => true,
         'price' => 9.00,
@@ -871,7 +921,7 @@ return [
     [
         'restaurant_id' => 6,
         'dish_name' => 'Bistecca ai Ferri',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
         'is_visible' => true,
         'price' => 8.00,
@@ -881,7 +931,7 @@ return [
     [
         'restaurant_id' => 6,
         'dish_name' => 'Polpettone',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/polpettoneadcda.jpeg',
         'is_visible' => true,
         'price' => 11.00,
@@ -891,7 +941,7 @@ return [
     [
         'restaurant_id' => 6,
         'dish_name' => 'Cotoletta di Pesce',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/cotolettapescedjcdec.jpeg',
         'is_visible' => true,
         'price' => 12.50,
@@ -901,7 +951,7 @@ return [
     [
         'restaurant_id' => 7,
         'dish_name' => 'Hayashi',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/hayashiddchdchbx.jpeg',
         'is_visible' => true,
         'price' => 11.50,
@@ -911,7 +961,7 @@ return [
     [
         'restaurant_id' => 7,
         'dish_name' => 'Okonomiyaki',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => null,
         'is_visible' => true,
         'price' => 7.50,
@@ -919,19 +969,9 @@ return [
         'is_vegetarian' => false
     ],
     [
-        'restaurant_id' => 8,
-        'dish_name' => 'Polpette di Verdure',
-        'category_id' => 2,
-        'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
-        'is_visible' => true,
-        'price' => 4.00,
-        'description' => 'Palline di verdure fritte con cuore di formaggio filante.',
-        'is_vegetarian' => true
-    ],
-    [
         'restaurant_id' => 9,
         'dish_name' => 'Zuppa di Pesce',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/zuppapesce2dcdiced.jpeg',
         'is_visible' => true,
         'price' => 12.00,
@@ -941,7 +981,7 @@ return [
     [
         'restaurant_id' => 9,
         'dish_name' => 'Straccetti di Manzo con Verdure',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/manzoverdurejascbhrc.jpg',
         'is_visible' => true,
         'price' => 12.50,
@@ -951,7 +991,7 @@ return [
     [
         'restaurant_id' => 10,
         'dish_name' => 'Zuppa di Pesce',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/zuppapesce2dcdiced.jpeg',
         'is_visible' => true,
         'price' => 14.00,
@@ -961,7 +1001,7 @@ return [
     [
         'restaurant_id' => 10,
         'dish_name' => 'Straccetti di Manzo con Verdure',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/manzoverdurejascbhrc.jpg',
         'is_visible' => true,
         'price' => 20.50,
@@ -970,18 +1010,8 @@ return [
     ],
     [
         'restaurant_id' => 11,
-        'dish_name' => 'Bistecca ai Ferri',
-        'category_id' => 2,
-        'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
-        'is_visible' => true,
-        'price' => 9.00,
-        'description' => 'Vitello almeno credo.',
-        'is_vegetarian' => false
-    ],
-    [
-        'restaurant_id' => 11,
         'dish_name' => 'Hayashi',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/hayashiddchdchbx.jpeg',
         'is_visible' => true,
         'price' => 10.50,
@@ -991,7 +1021,7 @@ return [
     [
         'restaurant_id' => 11,
         'dish_name' => 'Okonomiyaki',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/okonomiyakischdx.jpeg',
         'is_visible' => true,
         'price' => 15.00,
@@ -1001,7 +1031,7 @@ return [
     [
         'restaurant_id' => 14,
         'dish_name' => 'Polpette di Verdure',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
         'is_visible' => true,
         'price' => 7.00,
@@ -1011,7 +1041,7 @@ return [
     [
         'restaurant_id' => 14,
         'dish_name' => 'Scaloppine al Limone',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/scaloppineasdeghuj.jpeg',
         'is_visible' => true,
         'price' => 10.50,
@@ -1021,7 +1051,7 @@ return [
     [
         'restaurant_id' => 15,
         'dish_name' => 'Polpette di Verdure',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
         'is_visible' => true,
         'price' => 9.50,
@@ -1031,21 +1061,11 @@ return [
     [
         'restaurant_id' => 15,
         'dish_name' => 'Zuppa di Pesce',
-        'category_id' => 2,
+        'category_id' => 3,
         'dish_photo' => 'cover_dish/zuppapesce2dcdiced.jpeg',
         'is_visible' => true,
         'price' => 10.00,
         'description' => 'Zuppa di pesce con pomodorini e verdure miste.',
-        'is_vegetarian' => false
-    ],
-    [
-        'restaurant_id' => 15,
-        'dish_name' => 'Bistecca ai Ferri',
-        'category_id' => 2,
-        'dish_photo' => 'cover_dish/ferribisteccafcdgvbhjiko.jpeg',
-        'is_visible' => true,
-        'price' => 9.00,
-        'description' => 'Vitello almeno credo.',
         'is_vegetarian' => false
     ],
     //pizze
@@ -1475,12 +1495,12 @@ return [
     ],
     [
         'restaurant_id' => 2,
-        'dish_name' => 'Gelato Fritto',
+        'dish_name' => 'Mochi',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/gelfrittoISd78Dhgus7.jpeg',
+        'dish_photo' => 'cover_dish/mochiijdASFioha924.webp',
         'is_visible' => true,
         'price' => 3.50,
-        'description' => 'Croccante fuori e morbido dentro, un contrasto irresistibile',
+        'description' => 'Una morbida conclusione di un pasto.',
         'is_vegetarian' => true
     ],
     [
@@ -1554,7 +1574,7 @@ return [
         'is_vegetarian' => true
     ],
     [
-        'restaurant_id' => 18,
+        'restaurant_id' => 19,
         'dish_name' => 'Alfajores',
         'category_id' => 7,
         'dish_photo' => 'cover_dish/alfajoresIsdoan423UHds.jpeg',
@@ -1594,7 +1614,7 @@ return [
         'is_vegetarian' => true
     ],
     [
-        'restaurant_id' => 18,
+        'restaurant_id' => 19,
         'dish_name' => 'Churros',
         'category_id' => 7,
         'dish_photo' => 'cover_dish/churrosCOisdja814js.jpeg',
@@ -1906,7 +1926,7 @@ return [
         'is_vegetarian' => true
     ],
     [
-        'restaurant_id' => 1,
+        'restaurant_id' => 11,
         'dish_name' => 'Acqua Naturale',
         'category_id' => 8,
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
