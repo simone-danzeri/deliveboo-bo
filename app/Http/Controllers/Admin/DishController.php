@@ -4,6 +4,14 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Restaurant;
+use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
+use App\Models\Type;
+use App\Models\Category;
+use App\Models\Dish;
 
 class DishController extends Controller
 {
@@ -55,9 +63,12 @@ class DishController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Dish $dish)
     {
-        //
+        // $types = Type::all();
+        $user = Auth::user();
+        $categories = Category::all();
+        return view('admin.dishes.edit', compact('dish', 'user', 'categories'));
     }
 
     /**

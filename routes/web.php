@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\RestaurantController;
+use App\Http\Controllers\Admin\DishController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,9 @@ Route::middleware(['auth', 'verified'])
     Route::get('/negate-access', [DashboardController::class, 'negate'])->name('negate');
     Route::resource('restaurants', RestaurantController::class)->parameters([
         'restaurants' => 'restaurant:slug'
+    ]);
+    Route::resource('dishes', DishController::class)->parameters([
+        'dishes' => 'dish:dish_slug'
     ]);
 });
 
