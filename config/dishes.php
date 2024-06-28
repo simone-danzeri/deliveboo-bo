@@ -223,6 +223,26 @@ return [
         'description' => 'Pasta fresca con pesto alla genovese',
         'is_vegetarian' => true
     ],
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Ravioli di Ricotta e Spinaci',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/Ravioliricottaspinacisdfsdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 9.50,
+        'description' => 'Ravioli fatti a mano ripieni di ricotta e spinaci.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Penne all\'Arrabbiata',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish\pennearrabbiatassdfsdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Pasta piccante con pomodoro, aglio e peperoncino.',
+        'is_vegetarian' => true
+    ],
 
     [
         'restaurant_id' => 2,
@@ -232,6 +252,46 @@ return [
         'is_visible' => true,
         'price' => 17.00,
         'description' => 'Roll al salmone',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Ramen',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ramenfsffsfs',
+        'is_visible' => true,
+        'price' => 14.00,
+        'description' => 'Zuppa giapponese con un brodo ricco e profumato, servita con noodles, maiale e uovo marinato.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Gyoza',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gyozakeopcitfr',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Ravioli giapponesi ripieni di carne di maiale o verdure, cotti al vapore.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Pad Thai',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/padthaifojdpogjer',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Un piatto di noodle tailandese con gamberi, uova, germogli di soia e arachidi.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Laksa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/laksa9itre9t9rt',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Una zuppa di noodle malese a base di latte di cocco, curry e frutti di mare o pollo.',
         'is_vegetarian' => false
     ],
     [
@@ -285,7 +345,17 @@ return [
         'is_vegetarian' => true
     ],
     [
-        'restaurant_id' => 5,
+        'restaurant_id' => 4,
+        'dish_name' => 'Pasta e Fagioli',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/pastafagiolisffsdfd.jpg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Piatto tradizionale italiano con pasta e fagioli.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 4,
         'dish_name' => 'Gnocchi al Gorgonzola',
         'category_id' => 2,
         'dish_photo' => 'cover_dish/gnocchigorgoazfzsd.jpg',
@@ -302,6 +372,26 @@ return [
         'is_visible' => true,
         'price' => 8.50,
         'description' => 'Pasta tradizionale pugliese con cime di rapa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Tagliatelle ai Funghi Porcini',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/tagliatelleaifunghisdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Pasta fresca con funghi porcini.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Gnocchi al Gorgonzola',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gnocchigorgoazfzsd.jpg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Gnocchi di patate con salsa al gorgonzola.',
         'is_vegetarian' => true
     ],
     [
@@ -325,6 +415,66 @@ return [
         'is_vegetarian' => true
     ],
     [
+        'restaurant_id' => 6,
+        'dish_name' => 'Ravioli di Ricotta e Spinaci',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/Ravioliricottaspinacisdfsdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 9.50,
+        'description' => 'Ravioli fatti a mano ripieni di ricotta e spinaci.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Ramen',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ramenfsffsfs',
+        'is_visible' => true,
+        'price' => 10.00,
+        'description' => 'Zuppa giapponese con un brodo ricco e profumato, servita con noodles, maiale e uovo marinato.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Noodles con verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/noodlesconverduredfdkud',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Un piatto salutare per un pranzo o una cena sfiziosa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Gyoza',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gyozakeopcitfr',
+        'is_visible' => true,
+        'price' => 8.00,
+        'description' => 'Ravioli giapponesi ripieni di carne di maiale o verdure, cotti al vapore.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Pad Thai',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/padthaifojdpogjer',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Un piatto di noodle tailandese con gamberi, uova, germogli di soia e arachidi.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Laksa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/laksa9itre9t9rt',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Una zuppa di noodle malese a base di latte di cocco, curry e frutti di mare o pollo.',
+        'is_vegetarian' => false
+    ],
+    [
         'restaurant_id' => 9,
         'dish_name' => 'Linguine ai Frutti di Mare',
         'category_id' => 2,
@@ -334,6 +484,167 @@ return [
         'description' => 'Pasta con frutti di mare freschi.',
         'is_vegetarian' => false
     ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Risotto allo Zafferano',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/risottoallozafferanodsdsbhf',
+        'is_visible' => true,
+        'price' => 14.00,
+        'description' => 'Risotto cremoso con lo zafferano.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Pasta e Fagioli',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/pastafagiolisffsdfd.jpg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Piatto tradizionale italiano con pasta e fagioli.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Risotto allo Zafferano',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/risottoallozafferanodsdsbhf',
+        'is_visible' => true,
+        'price' => 14.00,
+        'description' => 'Risotto cremoso con lo zafferano.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Tagliatelle ai Funghi Porcini',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/tagliatelleaifunghisdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Pasta fresca con funghi porcini.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Gnocchi al Gorgonzola',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gnocchigorgoazfzsd.jpg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Gnocchi di patate con salsa al gorgonzola.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Orecchiette con Cime di Rapa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/orecchiettecimedirapafsfsd.jpg',
+        'is_visible' => true,
+        'price' => 8.50,
+        'description' => 'Pasta tradizionale pugliese con cime di rapa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Noodles con verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/noodlesconverduredfdkud',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Un piatto salutare per un pranzo o una cena sfiziosa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Pad Thai',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/padthaifojdpogjer',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Un piatto di noodle tailandese con gamberi, uova, germogli di soia e arachidi.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Laksa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/laksa9itre9t9rt',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Una zuppa di noodle malese a base di latte di cocco, curry e frutti di mare o pollo.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Gyoza',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gyozakeopcitfr',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Ravioli giapponesi ripieni di carne di maiale o verdure, cotti al vapore.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Gyoza',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gyozakeopcitfr',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Ravioli giapponesi ripieni di carne di maiale o verdure, cotti al vapore.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Ramen',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ramenfsffsfs',
+        'is_visible' => true,
+        'price' => 13.00,
+        'description' => 'Zuppa giapponese con un brodo ricco e profumato, servita con noodles, maiale e uovo marinato.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Noodles con verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/noodlesconverduredfdkud',
+        'is_visible' => true,
+        'price' => 15.00,
+        'description' => 'Un piatto salutare per un pranzo o una cena sfiziosa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Pad Thai',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/padthaifojdpogjer',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Un piatto di noodle tailandese con gamberi, uova, germogli di soia e arachidi.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Noodles con verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/noodlesconverduredfdkud',
+        'is_visible' => true,
+        'price' => 15.00,
+        'description' => 'Un piatto salutare per un pranzo o una cena sfiziosa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Laksa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/laksa9itre9t9rt',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Una zuppa di noodle malese a base di latte di cocco, curry e frutti di mare o pollo.',
+        'is_vegetarian' => false
+    ],
+    
 
     //secondi piatti
 
