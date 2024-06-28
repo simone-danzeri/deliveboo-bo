@@ -3,6 +3,7 @@
 @section('content')
     <h1>All the restaurants</h1>
 
+    <div class="overflow-auto">
     <table class="table table-striped">
         <thead>
           <tr>
@@ -30,23 +31,24 @@
                 <div class="mb-1">
                     {{-- <a class="btn btn-primary" href="{{ admin.restaurants.show, ['restaurant' => $restaurant->slug] }}">View</a>  --}}
                 </div>
-                
+
                 <div class="mb-1">
                     {{-- <a class="btn btn-warning" href="{{ admin.restaurants.edit, ['restaurant' => $restaurant->slug] }}">Edit</a>   --}}
                 </div>
-                
+
                 <div class="mb-1">
                     {{-- <form action="{{ admin.restaurants.destroy, ['restaurant' => $restaurant->slug] }}" method="POST">  --}}
                         @csrf
                         @method('DELETE')
 
                         <button class="btn btn-danger" type="submit">Delete</button>
-                    </form>   
+                    </form>
                 </div>
             </td>
-          </tr> 
-          @endforeach  
-          
+          </tr>
+          @endforeach
+
         </tbody>
       </table>
+    </div>
 @endsection
