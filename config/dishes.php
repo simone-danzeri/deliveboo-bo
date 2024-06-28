@@ -223,6 +223,26 @@ return [
         'description' => 'Pasta fresca con pesto alla genovese',
         'is_vegetarian' => true
     ],
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Ravioli di Ricotta e Spinaci',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/Ravioliricottaspinacisdfsdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 9.50,
+        'description' => 'Ravioli fatti a mano ripieni di ricotta e spinaci.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Penne all\'Arrabbiata',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish\pennearrabbiatassdfsdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Pasta piccante con pomodoro, aglio e peperoncino.',
+        'is_vegetarian' => true
+    ],
 
     [
         'restaurant_id' => 2,
@@ -232,6 +252,46 @@ return [
         'is_visible' => true,
         'price' => 17.00,
         'description' => 'Roll al salmone',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Ramen',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ramenfsffsfs',
+        'is_visible' => true,
+        'price' => 14.00,
+        'description' => 'Zuppa giapponese con un brodo ricco e profumato, servita con noodles, maiale e uovo marinato.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Gyoza',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gyozakeopcitfr',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Ravioli giapponesi ripieni di carne di maiale o verdure, cotti al vapore.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Pad Thai',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/padthaifojdpogjer',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Un piatto di noodle tailandese con gamberi, uova, germogli di soia e arachidi.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Laksa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/laksa9itre9t9rt',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Una zuppa di noodle malese a base di latte di cocco, curry e frutti di mare o pollo.',
         'is_vegetarian' => false
     ],
     [
@@ -285,7 +345,17 @@ return [
         'is_vegetarian' => true
     ],
     [
-        'restaurant_id' => 5,
+        'restaurant_id' => 4,
+        'dish_name' => 'Pasta e Fagioli',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/pastafagiolisffsdfd.jpg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Piatto tradizionale italiano con pasta e fagioli.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 4,
         'dish_name' => 'Gnocchi al Gorgonzola',
         'category_id' => 2,
         'dish_photo' => 'cover_dish/gnocchigorgoazfzsd.jpg',
@@ -302,6 +372,26 @@ return [
         'is_visible' => true,
         'price' => 8.50,
         'description' => 'Pasta tradizionale pugliese con cime di rapa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Tagliatelle ai Funghi Porcini',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/tagliatelleaifunghisdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Pasta fresca con funghi porcini.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Gnocchi al Gorgonzola',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gnocchigorgoazfzsd.jpg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Gnocchi di patate con salsa al gorgonzola.',
         'is_vegetarian' => true
     ],
     [
@@ -325,6 +415,66 @@ return [
         'is_vegetarian' => true
     ],
     [
+        'restaurant_id' => 6,
+        'dish_name' => 'Ravioli di Ricotta e Spinaci',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/Ravioliricottaspinacisdfsdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 9.50,
+        'description' => 'Ravioli fatti a mano ripieni di ricotta e spinaci.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Ramen',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ramenfsffsfs',
+        'is_visible' => true,
+        'price' => 10.00,
+        'description' => 'Zuppa giapponese con un brodo ricco e profumato, servita con noodles, maiale e uovo marinato.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Noodles con verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/noodlesconverduredfdkud',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Un piatto salutare per un pranzo o una cena sfiziosa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Gyoza',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gyozakeopcitfr',
+        'is_visible' => true,
+        'price' => 8.00,
+        'description' => 'Ravioli giapponesi ripieni di carne di maiale o verdure, cotti al vapore.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Pad Thai',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/padthaifojdpogjer',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Un piatto di noodle tailandese con gamberi, uova, germogli di soia e arachidi.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Laksa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/laksa9itre9t9rt',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Una zuppa di noodle malese a base di latte di cocco, curry e frutti di mare o pollo.',
+        'is_vegetarian' => false
+    ],
+    [
         'restaurant_id' => 9,
         'dish_name' => 'Linguine ai Frutti di Mare',
         'category_id' => 2,
@@ -334,8 +484,170 @@ return [
         'description' => 'Pasta con frutti di mare freschi.',
         'is_vegetarian' => false
     ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Risotto allo Zafferano',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/risottoallozafferanodsdsbhf',
+        'is_visible' => true,
+        'price' => 14.00,
+        'description' => 'Risotto cremoso con lo zafferano.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Pasta e Fagioli',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/pastafagiolisffsdfd.jpg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Piatto tradizionale italiano con pasta e fagioli.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Risotto allo Zafferano',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/risottoallozafferanodsdsbhf',
+        'is_visible' => true,
+        'price' => 14.00,
+        'description' => 'Risotto cremoso con lo zafferano.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Tagliatelle ai Funghi Porcini',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/tagliatelleaifunghisdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Pasta fresca con funghi porcini.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Gnocchi al Gorgonzola',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gnocchigorgoazfzsd.jpg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Gnocchi di patate con salsa al gorgonzola.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Orecchiette con Cime di Rapa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/orecchiettecimedirapafsfsd.jpg',
+        'is_visible' => true,
+        'price' => 8.50,
+        'description' => 'Pasta tradizionale pugliese con cime di rapa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Noodles con verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/noodlesconverduredfdkud',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Un piatto salutare per un pranzo o una cena sfiziosa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Pad Thai',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/padthaifojdpogjer',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Un piatto di noodle tailandese con gamberi, uova, germogli di soia e arachidi.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Laksa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/laksa9itre9t9rt',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Una zuppa di noodle malese a base di latte di cocco, curry e frutti di mare o pollo.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Gyoza',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gyozakeopcitfr',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Ravioli giapponesi ripieni di carne di maiale o verdure, cotti al vapore.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Gyoza',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/gyozakeopcitfr',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Ravioli giapponesi ripieni di carne di maiale o verdure, cotti al vapore.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Ramen',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ramenfsffsfs',
+        'is_visible' => true,
+        'price' => 13.00,
+        'description' => 'Zuppa giapponese con un brodo ricco e profumato, servita con noodles, maiale e uovo marinato.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Noodles con verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/noodlesconverduredfdkud',
+        'is_visible' => true,
+        'price' => 15.00,
+        'description' => 'Un piatto salutare per un pranzo o una cena sfiziosa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Pad Thai',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/padthaifojdpogjer',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Un piatto di noodle tailandese con gamberi, uova, germogli di soia e arachidi.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Noodles con verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/noodlesconverduredfdkud',
+        'is_visible' => true,
+        'price' => 15.00,
+        'description' => 'Un piatto salutare per un pranzo o una cena sfiziosa.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Laksa',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/laksa9itre9t9rt',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Una zuppa di noodle malese a base di latte di cocco, curry e frutti di mare o pollo.',
+        'is_vegetarian' => false
+    ],
+    
 
     //secondi piatti
+
     [
         'restaurant_id' => 18,
         'dish_name' => 'Carnitas Asadas',
@@ -416,10 +728,329 @@ return [
         'description' => 'Succulenti bocconcini di maiale cotti lentamente in una salsa verde piccante e aromatica.',
         'is_vegetarian' => false
     ],
-
-    //pizze
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Scaloppine al Limone',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/scaloppineasdeghuj.jpeg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Pollo e limone in un piatto di ceramica.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Bistecca ai Ferri',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Vitello almeno credo.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Hayashi',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/hayashiddchdchbx.jpeg',
+        'is_visible' => true,
+        'price' => 15.50,
+        'description' => null,
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Okonomiyaki',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/okonomiyakischdx.jpeg',
+        'is_visible' => true,
+        'price' => 8.50,
+        'description' => 'Sembra una frittata ma non lo è',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Straccetti di Manzo con Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/manzoverdurejascbhrc.jpg',
+        'is_visible' => true,
+        'price' => 14.50,
+        'description' => 'Manzo e verdure grigliate',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Bistecca ai Ferri',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Vitello almeno credo.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Zuppa di Pomodoro',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zuppapomodorodsjvrbdic.jpeg',
+        'is_visible' => true,
+        'price' => 6.50,
+        'description' => 'Pomodoro zuppato.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Zucchine Ripiene',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zucchineripienesdchb.jpeg',
+        'is_visible' => true,
+        'price' => 10.00,
+        'description' => 'Zucchine con ripieno di carne',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Polpette di Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Palline di verdure fritte con cuore di formaggio filante.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 4,
+        'dish_name' => 'Scaloppine al Limone',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/scaloppineasdeghuj.jpeg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Pollo e limone in un piatto di ceramica.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 4,
+        'dish_name' => 'Zucchine Ripiene',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zucchineripienesdchb.jpeg',
+        'is_visible' => true,
+        'price' => 9.50,
+        'description' => 'Zucchine con ripieno di carne',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Cotoletta di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/cotolettapescedjcdec.jpeg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Pesce di dubbia natura ma fritto.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Zuppa di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zuppapescedcnrhbc.jpeg',
+        'is_visible' => true,
+        'price' => 17.50,
+        'description' => 'Zuppa di pesce con pomodorini e verdure miste.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Branzino in umido',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/realbranzinodcecdced.jpeg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Il branzino come quello della mensa della scuola.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Bistecca ai Ferri',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
+        'is_visible' => true,
+        'price' => 8.00,
+        'description' => 'Vitello almeno credo.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Polpettone',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/polpettoneadcda.jpeg',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => null,
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Cotoletta di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/cotolettapescedjcdec.jpeg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Pesce di dubbia natura ma fritto.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Hayashi',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/hayashiddchdchbx.jpeg',
+        'is_visible' => true,
+        'price' => 11.50,
+        'description' => null,
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Okonomiyaki',
+        'category_id' => 2,
+        'dish_photo' => null,
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Sembra una frittata ma non lo è',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 8,
+        'dish_name' => 'Polpette di Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
+        'is_visible' => true,
+        'price' => 4.00,
+        'description' => 'Palline di verdure fritte con cuore di formaggio filante.',
+        'is_vegetarian' => true
+    ],
     [
         'restaurant_id' => 9,
+        'dish_name' => 'Zuppa di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zuppapesce2dcdiced.jpeg',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Zuppa di pesce con pomodorini e verdure miste ma migliore di quella di prima',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Straccetti di Manzo con Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/manzoverdurejascbhrc.jpg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Manzo e verdure grigliate',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Zuppa di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zuppapesce2dcdiced.jpeg',
+        'is_visible' => true,
+        'price' => 14.00,
+        'description' => 'Zuppa di pesce con pomodorini e verdure miste ma molto migliore di quella di prima',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Straccetti di Manzo con Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/manzoverdurejascbhrc.jpg',
+        'is_visible' => true,
+        'price' => 20.50,
+        'description' => 'Manzo e verdure grigliate',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Bistecca ai Ferri',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ferrifdhrxeosdjie.jpeg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Vitello almeno credo.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Hayashi',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/hayashiddchdchbx.jpeg',
+        'is_visible' => true,
+        'price' => 10.50,
+        'description' => null,
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Okonomiyaki',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/okonomiyakischdx.jpeg',
+        'is_visible' => true,
+        'price' => 15.00,
+        'description' => 'Sembra una frittata ma non lo è',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Polpette di Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Palline di verdure fritte con cuore di formaggio filante.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Scaloppine al Limone',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/scaloppineasdeghuj.jpeg',
+        'is_visible' => true,
+        'price' => 10.50,
+        'description' => 'Pollo e limone in un piatto di ceramica.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Polpette di Verdure',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/polpetteveggiedjvdi.jpeg',
+        'is_visible' => true,
+        'price' => 9.50,
+        'description' => 'Palline di verdure fritte con cuore di formaggio filante.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Zuppa di Pesce',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/zuppapesce2dcdiced.jpeg',
+        'is_visible' => true,
+        'price' => 10.00,
+        'description' => 'Zuppa di pesce con pomodorini e verdure miste.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Bistecca ai Ferri',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/ferribisteccafcdgvbhjiko.jpeg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Vitello almeno credo.',
+        'is_vegetarian' => false
+    ],
+    //pizze
+    [
+        'restaurant_id' => 1,
         'dish_name' => 'Pizza Margherita',
         'category_id' => 4,
         'dish_photo' => 'cover_dish/margheritashcbhdsid.jpeg',
@@ -428,9 +1059,19 @@ return [
         'description' => 'La più famosa pizza del mondo.',
         'is_vegetarian' => true
     ],
-  
     [
-        'restaurant_id' => 9,
+        'restaurant_id' => 6,
+        'dish_name' => 'Pizza Margherita',
+        'category_id' => 4,
+        'dish_photo' => 'cover_dish/margheritashcbhdsid.jpeg',
+        'is_visible' => true,
+        'price' => 5.00,
+        'description' => 'La più famosa pizza del mondo.',
+        'is_vegetarian' => true
+    ],
+
+    [
+        'restaurant_id' => 1,
         'dish_name' => 'Pizza Quattro Stagioni',
         'category_id' => 4,
         'dish_photo' => 'cover_dish/pizza4stagionisdfsd.jpg',
@@ -440,7 +1081,17 @@ return [
         'is_vegetarian' => false
     ],
     [
-        'restaurant_id' => 9,
+        'restaurant_id' => 6,
+        'dish_name' => 'Pizza Quattro Stagioni',
+        'category_id' => 4,
+        'dish_photo' => 'cover_dish/pizza4stagionisdfsd.jpg',
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Pizza con pomodori, mozzarella, prosciutto, funghi, carciofi e olive.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 1,
         'dish_name' => 'Pizza Quattro Formaggi',
         'category_id' => 4,
         'dish_photo' => 'cover_dish/pizza4formaggisdfsdf.jpg',
@@ -450,7 +1101,17 @@ return [
         'is_vegetarian' => true
     ],
     [
-        'restaurant_id' => 9,
+        'restaurant_id' => 6,
+        'dish_name' => 'Pizza Quattro Formaggi',
+        'category_id' => 4,
+        'dish_photo' => 'cover_dish/pizza4formaggisdfsdf.jpg',
+        'is_visible' => true,
+        'price' => 7.00,
+        'description' => 'Pizza con quattro diversi formaggi.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 6,
         'dish_name' => 'Pizza Diavola',
         'category_id' => 4,
         'dish_photo' => 'cover_dish/pizza-alla-diavolafsdfsdf.jpg',
@@ -460,7 +1121,7 @@ return [
         'is_vegetarian' => false
     ],
     [
-        'restaurant_id' => 9,
+        'restaurant_id' => 1,
         'dish_name' => 'Pizza Capricciosa',
         'category_id' => 4,
         'dish_photo' => 'cover_dish/pizzacapricciosafsdfsdf.jpg',
@@ -469,9 +1130,6 @@ return [
         'description' => 'Pizza con pomodoro, mozzarella, prosciutto, carciofi, olive e uovo.',
         'is_vegetarian' => false
     ],
-  
-    
-    
     //panini
     [
         'restaurant_id' => 8,
@@ -484,7 +1142,37 @@ return [
         'is_vegetarian' => false
     ],
     [
+        'restaurant_id' => 12,
+        'dish_name' => 'Chicken Power',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/chicpow241imdoi.jpeg',
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Il panino ideale per gli amanti del pollo panato, con lattuga fresca e formaggio',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 13,
+        'dish_name' => 'Chicken Power',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/chicpow241imdoi.jpeg',
+        'is_visible' => true,
+        'price' => 7.50,
+        'description' => 'Il panino ideale per gli amanti del pollo panato, con lattuga fresca e formaggio',
+        'is_vegetarian' => false
+    ],
+    [
         'restaurant_id' => 8,
+        'dish_name' => 'Double Cheeseburger',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/doublecheese1249Jisfjosdi.jpeg',
+        'is_visible' => true,
+        'price' => 6.20,
+        'description' => 'Doppio hamburger, cetriolini e una salsa pazzesca per un pranzo rapido e gustoso',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 12,
         'dish_name' => 'Double Cheeseburger',
         'category_id' => 5,
         'dish_photo' => 'cover_dish/doublecheese1249Jisfjosdi.jpeg',
@@ -524,6 +1212,26 @@ return [
         'is_vegetarian' => true
     ],
     [
+        'restaurant_id' => 13,
+        'dish_name' => 'Beyond Burger',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/beyond90134IHDisa.webp',
+        'is_visible' => true,
+        'price' => 8.30,
+        'description' => 'Questo panino con Beyond Burger farà sognare chiunque, anche chi non mangia carne!',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 8,
+        'dish_name' => 'Sloppy Joe',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/joeDJIOej892heu.webp',
+        'is_visible' => true,
+        'price' => 9.90,
+        'description' => 'Per chi si vuole davvero sentire come in America.',
+        'is_vegetarian' => false
+    ],
+    [
         'restaurant_id' => 12,
         'dish_name' => 'Sloppy Joe',
         'category_id' => 5,
@@ -531,6 +1239,36 @@ return [
         'is_visible' => true,
         'price' => 9.90,
         'description' => 'Per chi si vuole davvero sentire come in America.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 13,
+        'dish_name' => 'Sloppy Joe',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/joeDJIOej892heu.webp',
+        'is_visible' => true,
+        'price' => 9.90,
+        'description' => 'Per chi si vuole davvero sentire come in America.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 8,
+        'dish_name' => 'CBO',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/cboDIjsdi304JI.webp',
+        'is_visible' => true,
+        'price' => 7.90,
+        'description' => 'Pollo panato, bacon e cipolla per un\'esplosione di gusto',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 12,
+        'dish_name' => 'CBO',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/cboDIjsdi304JI.webp',
+        'is_visible' => true,
+        'price' => 7.90,
+        'description' => 'Pollo panato, bacon e cipolla per un\'esplosione di gusto',
         'is_vegetarian' => false
     ],
     [
@@ -555,6 +1293,317 @@ return [
         'is_vegetarian' => true
     ],
     //dolci
+    [
+        'restaurant_id' => 8,
+        'dish_name' => 'Ciambelle Americane',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/donutsIsndUSd3841hb2.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Il dolce più confortante di tutta l\'America',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 12,
+        'dish_name' => 'Ciambelle Americane',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/donutsIsndUSd3841hb2.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Il dolce più confortante di tutta l\'America',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 13,
+        'dish_name' => 'Ciambelle Americane',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/donutsIsndUSd3841hb2.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Il dolce più confortante di tutta l\'America',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Cheesecake Fredda',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'is_visible' => true,
+        'price' => 5.50,
+        'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Cheesecake Fredda',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'is_visible' => true,
+        'price' => 5.50,
+        'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 4,
+        'dish_name' => 'Cheesecake Fredda',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'is_visible' => true,
+        'price' => 5.50,
+        'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Cheesecake Fredda',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'is_visible' => true,
+        'price' => 5.50,
+        'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Cheesecake Fredda',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'is_visible' => true,
+        'price' => 5.50,
+        'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 8,
+        'dish_name' => 'Cheesecake Fredda',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'is_visible' => true,
+        'price' => 5.50,
+        'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Cheesecake Fredda',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'is_visible' => true,
+        'price' => 5.50,
+        'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Cheesecake Fredda',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'is_visible' => true,
+        'price' => 5.50,
+        'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 12,
+        'dish_name' => 'Cheesecake Fredda',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'is_visible' => true,
+        'price' => 5.50,
+        'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 13,
+        'dish_name' => 'Cheesecake Fredda',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'is_visible' => true,
+        'price' => 5.50,
+        'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Gelato Fritto',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/gelfrittoISd78Dhgus7.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => 'Croccante fuori e morbido dentro, un contrasto irresistibile',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Gelato Fritto',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/gelfrittoISd78Dhgus7.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => 'Croccante fuori e morbido dentro, un contrasto irresistibile',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Gelato Fritto',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/gelfrittoISd78Dhgus7.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => 'Croccante fuori e morbido dentro, un contrasto irresistibile',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Gelato Fritto',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/gelfrittoISd78Dhgus7.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => 'Croccante fuori e morbido dentro, un contrasto irresistibile',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Gelato Fritto',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/gelfrittoISd78Dhgus7.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => 'Croccante fuori e morbido dentro, un contrasto irresistibile',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 2,
+        'dish_name' => 'Gelato Fritto',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/gelfrittoISd78Dhgus7.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => 'Croccante fuori e morbido dentro, un contrasto irresistibile',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 7,
+        'dish_name' => 'Mochi',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/mochiijdASFioha924.webp',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => 'Una morbida conclusione di un pasto.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 11,
+        'dish_name' => 'Mochi',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/mochiijdASFioha924.webp',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => 'Una morbida conclusione di un pasto.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 14,
+        'dish_name' => 'Mochi',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/mochiijdASFioha924.webp',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => 'Una morbida conclusione di un pasto.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 15,
+        'dish_name' => 'Mochi',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/mochiijdASFioha924.webp',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => 'Una morbida conclusione di un pasto.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 16,
+        'dish_name' => 'Alfajores',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/alfajoresIsdoan423UHds.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => '',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 17,
+        'dish_name' => 'Alfajores',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/alfajoresIsdoan423UHds.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => '',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 18,
+        'dish_name' => 'Alfajores',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/alfajoresIsdoan423UHds.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => '',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 18,
+        'dish_name' => 'Alfajores',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/alfajoresIsdoan423UHds.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => '',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 16,
+        'dish_name' => 'Churros',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/churrosCOisdja814js.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => '',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 17,
+        'dish_name' => 'Churros',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/churrosCOisdja814js.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => '',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 18,
+        'dish_name' => 'Churros',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/churrosCOisdja814js.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => '',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 18,
+        'dish_name' => 'Churros',
+        'category_id' => 7,
+        'dish_photo' => 'cover_dish/churrosCOisdja814js.jpeg',
+        'is_visible' => true,
+        'price' => 3.50,
+        'description' => '',
+        'is_vegetarian' => true
+    ],
+
     //bevande
     [
         'restaurant_id' => 1,
@@ -1124,6 +2173,326 @@ return [
         'is_visible' => true,
         'price' => 3.00,
         'description' => 'Dal 1886 la bevanda più amata.',
+        'is_vegetarian' => true
+    ],
+    //altro
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 4,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 8,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 12,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 13,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 16,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],    [
+        'restaurant_id' => 17,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 18,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 19,
+        'dish_name' => 'Patatine fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/patatineDISjdsi384.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Mozzarelline Fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/mozzaFInsif8349.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 3,
+        'dish_name' => 'Mozzarelline Fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/mozzaFInsif8349.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 4,
+        'dish_name' => 'Mozzarelline Fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/mozzaFInsif8349.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 5,
+        'dish_name' => 'Mozzarelline Fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/mozzaFInsif8349.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 6,
+        'dish_name' => 'Mozzarelline Fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/mozzaFInsif8349.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 9,
+        'dish_name' => 'Mozzarelline Fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/mozzaFInsif8349.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 10,
+        'dish_name' => 'Mozzarelline Fritte',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/mozzaFInsif8349.jpeg',
+        'is_visible' => true,
+        'price' => 2.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 8,
+        'dish_name' => 'Nuggets di pollo',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/nuggetIjsISj34J.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 12,
+        'dish_name' => 'Nuggets di pollo',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/nuggetIjsISj34J.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 13,
+        'dish_name' => 'Nuggets di pollo',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/nuggetIjsISj34J.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 16,
+        'dish_name' => 'Chiles Toreados',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/chilesIsdnSI83491H.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 17,
+        'dish_name' => 'Chiles Toreados',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/chilesIsdnSI83491H.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 18,
+        'dish_name' => 'Chiles Toreados',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/chilesIsdnSI83491H.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 19,
+        'dish_name' => 'Chiles Toreados',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/chilesIsdnSI83491H.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 16,
+        'dish_name' => 'Tamales',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/tamalesISDhidh342H.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 17,
+        'dish_name' => 'Tamales',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/tamalesISDhidh342H.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 18,
+        'dish_name' => 'Tamales',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/tamalesISDhidh342H.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
+        'is_vegetarian' => true
+    ],
+    [
+        'restaurant_id' => 19,
+        'dish_name' => 'Tamales',
+        'category_id' => null,
+        'dish_photo' => 'cover_dish/tamalesISDhidh342H.jpeg',
+        'is_visible' => true,
+        'price' => 4.50,
+        'description' => 'Una sfiziosità a cui non rinunciare.',
         'is_vegetarian' => true
     ],
 ];
