@@ -336,7 +336,86 @@ return [
     ],
 
     //secondi piatti
-
+    [
+        'restaurant_id' => 18,
+        'dish_name' => 'Carnitas Asadas',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/carnitasasadashjgjdjdkkgklk.jpg',
+        'is_visible' => true,
+        'price' => 9.00,
+        'description' => 'Carne cotta e croccante servito con tortillas',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 18,
+        'dish_name' => 'Quesadillas',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/quesadillasflgldl.jpg',
+        'is_visible' => true,
+        'price' => 8.00,
+        'description' => 'Tortillas dorate farcite con formaggio fuso e ingredienti freschi',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 19,
+        'dish_name' => 'Chicharrón en Salsa Verde',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/chicharrosalsaverdelkjh.jpg',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Maiale fritto e cotto in unsa salsa verde con peperoncino',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 19,
+        'dish_name' => 'Puntas de Filete',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/puntasdefiletegusdr',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Punte di filetto di manzo saltate in padella con cipolla e riso',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 19,
+        'dish_name' => 'Pulpo a la Mexicana',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/pulpoalamexicana',
+        'is_visible' => true,
+        'price' => 10.00,
+        'description' => 'Polpo cotto in una salsa di pomodoro con cipolla spesso servito con riso',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 17,
+        'dish_name' => 'Relleno negro',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/rellenonegrogfdr',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Tenera carne di maiale marinata e cotta lentamente in una salsa densa di pepe nero',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 17,
+        'dish_name' => 'Cochinita Pibil',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/cochinitapibildagsgsags',
+        'is_visible' => true,
+        'price' => 12.00,
+        'description' => 'Preparata con carne di maiale marinata in una miscela di achiote, cotta lentamente in un forno sotterraneo o in un cestello di metallo',
+        'is_vegetarian' => false
+    ],
+    [
+        'restaurant_id' => 17,
+        'dish_name' => 'Puerco en salsa verde',
+        'category_id' => 5,
+        'dish_photo' => 'cover_dish/puercosalsaverdepolikuj',
+        'is_visible' => true,
+        'price' => 11.00,
+        'description' => 'Succulenti bocconcini di maiale cotti lentamente in una salsa verde piccante e aromatica.',
+        'is_vegetarian' => false
+    ],
 
     //pizze
     [
