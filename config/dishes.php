@@ -337,7 +337,16 @@ return [
 
     //secondi piatti
 
-
+    [
+        'restaurant_id' => 1,
+        'dish_name' => 'Scaloppine al Limone',
+        'category_id' => 2,
+        'dish_photo' => 'cover_dish/scaloppineasdeghuj.jpeg',
+        'is_visible' => true,
+        'price' => 12.50,
+        'description' => 'Pollo e limone in un piatto di ceramica.',
+        'is_vegetarian' => false
+    ],
     //pizze
     [
         'restaurant_id' => 9,
@@ -349,7 +358,7 @@ return [
         'description' => 'La più famosa pizza del mondo.',
         'is_vegetarian' => true
     ],
-  
+
     [
         'restaurant_id' => 9,
         'dish_name' => 'Pizza Quattro Stagioni',
@@ -390,9 +399,9 @@ return [
         'description' => 'Pizza con pomodoro, mozzarella, prosciutto, carciofi, olive e uovo.',
         'is_vegetarian' => false
     ],
-  
-    
-    
+
+
+
     //panini
     [
         'restaurant_id' => 8,
