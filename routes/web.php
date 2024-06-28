@@ -34,7 +34,7 @@ Route::middleware(['auth', 'verified'])
     Route::resource('restaurants', RestaurantController::class)->parameters([
         'restaurants' => 'restaurant:slug'
     ]);
-    Route::resource('dishes', DishController::class)->parameters([
+    Route::resource('{restaurant}/dishes', DishController::class)->parameters([
         'dishes' => 'dish:dish_slug'
     ]);
 });

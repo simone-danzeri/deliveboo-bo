@@ -12,6 +12,7 @@ use Illuminate\Validation\Rule;
 use App\Models\Type;
 use App\Models\Category;
 use App\Models\Dish;
+use Illuminate\Support\Facades\DB;
 
 class DishController extends Controller
 {
@@ -20,9 +21,14 @@ class DishController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($restSlug)
     {
-        //
+        $restaurant = Restaurant::all()->where('slug', '=', $restSlug)->first();
+        //$getRestaurant = DB::table('restaurants')->where('slug', '=', $restSlug)->get();
+        //$restaurant = $getRestaurant[0];
+        $user = Auth::user();
+        $dishes = Dish::where('restaurant_id', '=', $restaurant['id'])->get();
+        return view('admin.dishes.index', compact('user', 'dishes', 'restaurant'));
     }
 
     /**
@@ -63,12 +69,12 @@ class DishController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Dish $dish)
-    {
+    public function edit(Restaurant $restaurant, Dish $dish){
         // $types = Type::all();
         $user = Auth::user();
         $categories = Category::all();
-        return view('admin.dishes.edit', compact('dish', 'user', 'categories'));
+
+        return view('admin.dishes.edit', compact('dish', 'user', 'categories', 'restaurant'));
     }
 
     /**

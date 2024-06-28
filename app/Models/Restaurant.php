@@ -13,8 +13,8 @@ class Restaurant extends Model
     }
 
     protected $fillable = ['restaurant_name', 'slug', 'address', 'img', 'phone', 'email','vat_number'];
-    
-    
+
+
     public function types() {
         return $this->belongsToMany(Type::class);
     }
