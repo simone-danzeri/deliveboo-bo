@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Dish extends Model
 {
     use HasFactory;
+
     public function restaurant() {
         return $this->belongsTo(Restaurant::class);
     }
@@ -16,6 +17,11 @@ class Dish extends Model
     }
     public function category() {
         return $this->belongsTo(Category::class);
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 
     protected $fillable = ['restaurant_id', 'dish_name', 'dish_slug', 'category_id', 'dish_photo', 'is_visible', 'price', 'description', 'is_vegetarian'];

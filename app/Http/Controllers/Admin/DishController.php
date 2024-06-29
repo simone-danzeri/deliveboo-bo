@@ -74,7 +74,12 @@ class DishController extends Controller
         $user = Auth::user();
         $categories = Category::all();
 
-        return view('admin.dishes.edit', compact('dish', 'user', 'categories', 'restaurant'));
+        if($user->id == $restaurant->user_id){
+            return view('admin.dishes.edit', compact('dish', 'user', 'categories', 'restaurant'));
+        } else {
+            return view('admin.negate', compact('user'));
+        }
+
     }
 
     /**
