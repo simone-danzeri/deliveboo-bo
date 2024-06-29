@@ -107,4 +107,15 @@ class DishController extends Controller
 
         return redirect()->route('admin.dishes.index', $restSlug);
     }
+
+    public function bin(Restaurant $restaurant, Dish $dish)
+    {
+        $user = Auth::user();
+        $binDishes = Dish::onlyTrashed()
+            ->whereHas('restaurant', function($query) use ($user) {
+                $query->where('user_id', $user->id);
+            })->get();
+
+        return view('admin.restaurants.bin', compact('binDishes', 'user'));
+    }
 }

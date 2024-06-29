@@ -31,6 +31,7 @@ Route::middleware(['auth', 'verified'])
 ->group(function() {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/negate-access', [DashboardController::class, 'negate'])->name('negate');
+    Route::get('/restaurants/bin', [DishController::class, 'bin'])->name('restaurants.bin');
     Route::resource('restaurants', RestaurantController::class)->parameters([
         'restaurants' => 'restaurant:slug'
     ]);

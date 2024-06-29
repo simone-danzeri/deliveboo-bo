@@ -62,6 +62,9 @@
                         <a href="{{route('admin.restaurants.create')}}" class="d-block btn ml-2 border border-light my-3 text-white">
                             Add new Restaurant
                         </a>
+                        <a href="{{route('admin.restaurants.bin')}}" class="d-block btn ml-2 border border-light my-3 text-white">
+                            <i class="fa-solid fa-trash"></i> Bin
+                        </a>
                         <div class="accordion accordion-flush" id="accordionFlushExample">
                             @foreach ($user->restaurants as $rest)
                                 <div class="accordion-item">
