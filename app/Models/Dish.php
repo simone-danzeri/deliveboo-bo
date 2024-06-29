@@ -21,10 +21,10 @@ class Dish extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
+    // public function getRouteKeyName()
+    // {
+    //     return 'dish_slug';
+    // }
 
     protected $fillable = ['restaurant_id', 'dish_name', 'dish_slug', 'category_id', 'dish_photo', 'is_visible', 'price', 'description', 'is_vegetarian'];
 }

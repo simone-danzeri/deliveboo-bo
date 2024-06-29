@@ -21,6 +21,7 @@
         </thead>
         <tbody>
           @foreach ($binDishes as $dish)
+
           <tr>
             <td>{{ $dish->id}}</td>
             <td>{{ $dish->restaurant->restaurant_name }}</td>
@@ -50,7 +51,7 @@
             @endif
             <td>
                 <div class="mb-1">
-                    {{-- <form action="{{ route('admin.dishes.singleDestory', ['restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] ) }}" method="POST">
+                    <form action="{{ route('admin.restaurants.emptyBin', [ 'dish' => $dish ] ) }}" method="POST">
                         @csrf
                         @method('DELETE')
 
@@ -58,12 +59,12 @@
                     </form>
                 </div>
                 <div class="mb-1">
-                    <form action="{{ route('admin.dishes.restore', ['restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] ) }}" method="POST">
+                    <form action="{{ route('admin.restaurants.restoreBin', ['dish' => $dish] ) }}" method="POST">
                         @csrf
                         @method('PATCH')
 
                         <button class="btn btn-success" type="submit">Restore</button>
-                    </form> --}}
+                    </form>
                 </div>
             </td>
           </tr>

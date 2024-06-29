@@ -116,6 +116,27 @@ class DishController extends Controller
                 $query->where('user_id', $user->id);
             })->get();
 
-        return view('admin.restaurants.bin', compact('binDishes', 'user'));
+        return view('admin.restaurants.bin', compact('binDishes', 'user', 'restaurant'));
+    }
+
+    public function emptyBin($dish)
+    {
+        $delDish = Dish::onlyTrashed()->findOrFail($dish);
+
+        $user = Auth::user();
+        $delDish->forceDelete();
+        //$dish->forceDelete();
+
+        return redirect()->route('admin.restaurants.bin', ['user']);
+    }
+
+    public function restoreBin($dish)
+    {
+        $restDish = Dish::onlyTrashed()->findOrFail($dish);
+
+        $user = Auth::user();
+        $restDish->restore();
+
+        return redirect()->route('admin.restaurants.bin', ['user']);
     }
 }
