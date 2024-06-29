@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="mb-1">
-                    {{-- <form action="{{ admin.restaurants.destroy, ['restaurant' => $restaurant->slug] }}" method="POST">  --}}
+                    <form action="{{ route('admin.dishes.destroy', ['restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] ) }}" method="POST">
                         @csrf
                         @method('DELETE')
 

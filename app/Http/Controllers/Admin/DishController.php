@@ -100,8 +100,11 @@ class DishController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Restaurant $restaurant, Dish $dish)
     {
-        //
+        $dish->delete();
+        $restSlug = $restaurant->slug;
+
+        return redirect()->route('admin.dishes.index', $restSlug);
     }
 }
