@@ -13,10 +13,24 @@ class DishController extends Controller
 {
     public function index(Request $request) {
         $restaurant = $request->query('restaurant');
-        $dishes = Dish::where('restaurant_id', '=', $restaurant)->get();
-        return response()->json([
-            "success" => true,
-            "results" => $dishes
-        ]);
+        if(!$restaurant || !is_numeric($restaurant)) {
+            return response()->json([
+                "success" => false,
+                "results" => 'This value is invalid'
+            ]);
+        };
+        $dishes = Dish::where('restaurant_id', '=', $restaurant)->where('is_visible', '=', true)->get();
+        if(count($dishes) == 0) {
+            return response()->json([
+                "success" => false,
+                "results" => "No dishes exists for this restaurant or this restaurant doesn't exists"
+            ]);
+        }  else {
+            return response()->json([
+                "success" => true,
+                "results" => $dishes
+            ]);
     }
+
+}
 }
