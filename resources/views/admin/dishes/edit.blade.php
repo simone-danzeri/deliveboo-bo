@@ -17,7 +17,7 @@
         @method('PUT')
         <div class="mb-3">
           <label for="dish_name" class="form-label">Change name of this dish</label>
-          <input type="text" class="form-control" id="dish_name" name="dish_name" value="{{old('dish_name', $dish->dish_name)}}">
+          <input type="text" class="form-control" id="dish_name" name="dish_name" value="{{old('dish_name', $dish->dish_name)}}" required maxlength="255">
         </div>
         <div class="mb-3">
             <label for="category_id" class="form-label">Choose a type</label>
@@ -30,23 +30,23 @@
         </div>
         <div class="mb-3">
             <label for="dish_photo" class="form-label">Upload a new image for this dish</label>
-            <input class="form-control" type="file" id="dish_photo" name="dish_photo">
+            <input class="form-control" type="file" id="dish_photo" name="dish_photo" accept=".jpg, .jpeg, .png, .gif, .bmp, image/jpeg, image/png, image/gif, image/bmp">
         </div>
-        <div class="mb-3 form-check">
+        <div class="mb-3 form-check form-switch">
             <input type="checkbox" class="form-check-input" id="is_visible" name="is_visible" value="1" {{ old('is_visible') ? 'checked' : '' }} @checked($dish->is_visible)>
             <label class="form-check-label" for="is_visible">Is this dish visible?</label>
         </div>
-        <div class="mb-3 form-check">
+        <div class="mb-3 form-check form-switch">
             <input type="checkbox" class="form-check-input" id="is_vegetarian" name="is_vegetarian" value="1" {{ old('is_vegetarian') ? 'checked' : '' }} @checked($dish->is_vegetarian)>
             <label class="form-check-label" for="is_vegetarian" >Is this dish vegetarian?</label>
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Change the price of this dish</label>
-            <input type="text" class="form-control" id="price" name="price" value="{{old('price', $dish->price)}}">
+            <input type="text" class="form-control" id="price" name="price" value="{{old('price', $dish->price)}}" inputmode="numeric" pattern="^\d+(\.\d{1,2})?$" required min="0">
         </div>
         <div class="mb-3">
             <label for="description" class="form-label">Change description</label>
-            <textarea class="form-control" id="description" name="description" rows="3">{{ old('description', $dish->description) }}</textarea>
+            <textarea class="form-control" id="description" name="description" maxlength="1000" rows="3">{{ old('description', $dish->description) }}</textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
