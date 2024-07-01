@@ -100,8 +100,42 @@ class DishController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Restaurant $restaurant, Dish $dish)
     {
-        //
+        $dish->delete();
+        $restSlug = $restaurant->slug;
+
+        return redirect()->route('admin.dishes.index', $restSlug);
+    }
+
+    public function bin(Restaurant $restaurant, Dish $dish)
+    {
+        $user = Auth::user();
+        $binDishes = Dish::onlyTrashed()
+            ->whereHas('restaurant', function($query) use ($user) {
+                $query->where('user_id', $user->id);
+            })->get();
+
+        return view('admin.restaurants.bin', compact('binDishes', 'user', 'restaurant'));
+    }
+
+    public function emptyBin($dish)
+    {
+        $delDish = Dish::onlyTrashed()->findOrFail($dish);
+
+        $user = Auth::user();
+        $delDish->forceDelete();
+
+        return redirect()->route('admin.restaurants.bin', ['user']);
+    }
+
+    public function restoreBin($dish)
+    {
+        $restDish = Dish::onlyTrashed()->findOrFail($dish);
+
+        $user = Auth::user();
+        $restDish->restore();
+
+        return redirect()->route('admin.restaurants.bin', ['user']);
     }
 }

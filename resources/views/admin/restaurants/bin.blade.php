@@ -1,13 +1,14 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h1>{{$restaurant->restaurant_name}}'s Menu</h1>
+    <h1>Bin</h1>
 
     <div class="overflow-auto">
     <table class="table table-striped">
         <thead>
           <tr>
             <th scope="col">Id</th>
+            <th scope="col">Restaurant</th>
             <th scope="col">Dish</th>
             <th scope="col">Slug</th>
             <th scope="col">Category</th>
@@ -19,9 +20,11 @@
           </tr>
         </thead>
         <tbody>
-          @foreach ($dishes as $dish)
+          @foreach ($binDishes as $dish)
+
           <tr>
             <td>{{ $dish->id}}</td>
+            <td>{{ $dish->restaurant->restaurant_name }}</td>
             <td>{{$dish->dish_name}}</td>
             <td>{{$dish->dish_slug}}</td>
             @if($dish->category)
@@ -48,17 +51,19 @@
             @endif
             <td>
                 <div class="mb-1">
-                    <a class="btn btn-success" href="{{route('admin.dishes.show', [ 'restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] )}}">View</a>
-                </div>
-                <div class="mb-1">
-                    <a class="btn btn-warning" href="{{route('admin.dishes.edit', [ 'restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] )}}">Edit</a>
-                </div>
-                <div class="mb-1">
-                    <form action="{{ route('admin.dishes.destroy', ['restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] ) }}" method="POST">
+                    <form action="{{ route('admin.restaurants.emptyBin', [ 'dish' => $dish ] ) }}" method="POST">
                         @csrf
                         @method('DELETE')
 
                         <button class="btn btn-danger" type="submit">Delete</button>
+                    </form>
+                </div>
+                <div class="mb-1">
+                    <form action="{{ route('admin.restaurants.restoreBin', ['dish' => $dish] ) }}" method="POST">
+                        @csrf
+                        @method('PATCH')
+
+                        <button class="btn btn-success" type="submit">Restore</button>
                     </form>
                 </div>
             </td>
