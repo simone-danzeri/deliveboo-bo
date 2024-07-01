@@ -58,9 +58,12 @@ class DishController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Restaurant $restaurant, Dish $dish)
     {
-        //
+        // dd($dish);
+        $user = Auth::user();
+        
+        return view('admin.dishes.show', compact('user','restaurant','dish',));
     }
 
     /**
