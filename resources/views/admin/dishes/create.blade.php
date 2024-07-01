@@ -28,6 +28,17 @@
                     <label for="dish_photo" class="form-label">Dish Photo</label>
                     <input class="form-control" type="file" id="dish_photo" name="dish_photo">
                 </div>
+
+            
+                <div class="mb-3">
+                    <label for="category_id" class="form-label">Choose a type</label>
+                    <select class="form-select" aria-label="Default select example" id="category_id" name="category_id">
+                        <option value="">Altro</option>
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->id }}" @selected($category->id == old('category_id'))>{{ $category->name }}</option>
+                        @endforeach
+                    </select>
+                </div>
         
                 </div>
             

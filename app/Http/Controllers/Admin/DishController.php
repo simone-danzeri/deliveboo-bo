@@ -39,7 +39,8 @@ class DishController extends Controller
     public function create(Restaurant $restaurant)
     {
         $user = Auth::user();
-        return view('admin.dishes.create', compact('user', 'restaurant'));
+        $categories = Category::all();
+        return view('admin.dishes.create', compact('user', 'restaurant','categories'));
     }
 
     /**
@@ -55,6 +56,7 @@ class DishController extends Controller
             'dish_name' => 'required|string|max:255',
             'dish_photo' => 'nullable|image|max:2048',
             'price' => 'required|numeric|max:999,99',
+            'category_id'=> 'nullable|exists:categories,id',
             'description' => 'nullable|string|max:1000',
             'is_vegetarian' => 'boolean',
             'is_visible' => 'boolean',
@@ -79,6 +81,10 @@ class DishController extends Controller
 
         if(!$request->has('is_vegetarian')) {
             $newDish-> is_vegetarian = 0;
+        };
+
+        if(!$request->has('category_id')) {
+            $newDish->category_id = null;
         };
 
         $newDish->save();
