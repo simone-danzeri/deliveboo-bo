@@ -100,10 +100,13 @@ class DishController extends Controller
      */
     public function show(Restaurant $restaurant, Dish $dish)
     {
-        // dd($dish);
         $user = Auth::user();
-
-        return view('admin.dishes.show', compact('user','restaurant','dish',));
+        $categories = Category::all();
+        if ($user->id == $restaurant->user_id) {
+            return view('admin.dishes.show', compact('dish', 'user', 'restaurant','categories'));
+        } else {
+            return view('admin.negate', compact('user'));
+        }
     }
 
     /**
