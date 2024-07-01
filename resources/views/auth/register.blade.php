@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Register') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('register') }}" id="registerForm">
                         @csrf
 
                         <div class="mb-4 row">
@@ -59,7 +59,9 @@
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
+                            <div id="passwordError" class="text-danger text-center"></div>
                         </div>
+
 
                         <div class="mb-4 row mb-0">
                             <div class="col-md-6 offset-md-4">
