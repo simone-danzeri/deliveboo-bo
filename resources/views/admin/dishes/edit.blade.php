@@ -31,6 +31,9 @@
         <div class="mb-3">
             <label for="dish_photo" class="form-label">Upload a new image for this dish</label>
             <input class="form-control" type="file" id="dish_photo" name="dish_photo" accept=".jpg, .jpeg, .png, .gif, .bmp, image/jpeg, image/png, image/gif, image/bmp">
+
+            <input type="checkbox" class="form-check-input" id="delete-img" name="delete-img" value="1" {{ old('delete-img') ? 'checked' : '' }}>
+            <label class="form-check-label" for="delete-img">Check this checkbox if you want to completely delete the image instead</label>
         </div>
         <div class="mb-3 form-check form-switch">
             <input type="checkbox" class="form-check-input" id="is_visible" name="is_visible" value="1" {{ old('is_visible') ? 'checked' : '' }} @checked($dish->is_visible)>
