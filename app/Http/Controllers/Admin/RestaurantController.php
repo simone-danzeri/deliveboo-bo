@@ -119,7 +119,7 @@ class RestaurantController extends Controller
                 ],
                 'address' => 'required',
                 'phone' => 'nullable|max:20',
-                'img' => 'nullable|image|max:254',
+                'img' => 'nullable|image|max:255',
                 'type_name' => 'nullable|exists:types,id',
                 'email' => 'nullable|email'
             ]
@@ -130,7 +130,7 @@ class RestaurantController extends Controller
             if($restaurant->img) {
                 Storage::delete($restaurant->img);
             }
-            $img_path = Storage::disk('public')->put('restaurants', $formData['img']);
+            $img_path = Storage::disk('public')->put('cover_restaurant', $formData['img']);
             $formData['img'] = $img_path;
         };
         $restaurant['slug'] = Str::slug($formData['restaurant_name'], '-');
