@@ -62,7 +62,7 @@ class DishController extends Controller
     {
         // dd($dish);
         $user = Auth::user();
-        
+
         return view('admin.dishes.show', compact('user','restaurant','dish',));
     }
 
@@ -92,9 +92,37 @@ class DishController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Restaurant $restaurant, Dish $dish)
     {
-        //
+        // Validation
+        $request->validate([
+            'dish_name' => 'required|max:255',
+            'dish_photo' => 'image|max:255|nullable',
+            'is_visible' => 'boolean',
+            'is_vegetarian' => 'boolean',
+            'category_id' => 'nullable|exists:categories,id',
+            'price' => 'numeric|max:999.99',
+            'description' => 'nullable|max:1000'
+        ]);
+
+        $formData = $request->all();
+        if ($request->hasFile('img')) {
+            if($dish->dish_photo) {
+                Storage::delete($restaurant->dish_photo);
+            }
+            $img_path = Storage::disk('public')->put('cover_dish', $formData['dish_photo']);
+            $formData['dish_photo'] = $img_path;
+        };
+        $dish['dish_slug'] = Str::slug($formData['dish_name'], '-');
+        $checkboxValueVisible = $request->has('is_visible') ? 1 : 0;
+        $checkboxValueVegetarian = $request->has('is_vegetarian') ? 1 : 0;
+        if(!$request->has('category_id')) {
+            $formData['category_id'] = null;
+        }
+        $dish['is_visible'] = $checkboxValueVisible;
+        $dish['is_vegetarian'] = $checkboxValueVegetarian;
+        $dish->update($formData);
+        return redirect()->route('admin.dishes.show', ['restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug]);
     }
 
     /**
