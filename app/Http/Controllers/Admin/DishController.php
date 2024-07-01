@@ -125,7 +125,6 @@ class DishController extends Controller
 
         $user = Auth::user();
         $delDish->forceDelete();
-        //$dish->forceDelete();
 
         return redirect()->route('admin.restaurants.bin', ['user']);
     }

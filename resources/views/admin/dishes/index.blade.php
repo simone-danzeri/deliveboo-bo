@@ -48,13 +48,11 @@
             @endif
             <td>
                 <div class="mb-1">
-                    {{-- <a class="btn btn-primary" href="{{ admin.restaurants.show, ['restaurant' => $restaurant->slug] }}">View</a>  --}}
+                    <a class="btn btn-success" href="{{route('admin.dishes.show', [ 'restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] )}}">View</a>
                 </div>
-
                 <div class="mb-1">
                     <a class="btn btn-warning" href="{{route('admin.dishes.edit', [ 'restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] )}}">Edit</a>
                 </div>
-
                 <div class="mb-1">
                     <form action="{{ route('admin.dishes.destroy', ['restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] ) }}" method="POST">
                         @csrf
