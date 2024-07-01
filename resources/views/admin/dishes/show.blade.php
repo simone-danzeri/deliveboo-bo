@@ -12,7 +12,11 @@
                         Type:
                     </div>
                     <div class="col-md-9">
-                        <p>{{ $dish->category->name }}</p>
+                        @if ($dish->category)
+                            <p>{{ $dish->category->name }}</p>
+                        @else
+                            <span>Altro</span>
+                        @endif
                     </div>
                 </div>
                 <div class="row mb-4">

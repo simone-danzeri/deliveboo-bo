@@ -13,6 +13,7 @@ use App\Models\Type;
 use App\Models\Category;
 use App\Models\Dish;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class DishController extends Controller
 {
@@ -40,7 +41,12 @@ class DishController extends Controller
     {
         $user = Auth::user();
         $categories = Category::all();
-        return view('admin.dishes.create', compact('user', 'restaurant','categories'));
+
+        if($user->id == $restaurant->user_id){
+            return view('admin.dishes.create', compact('user', 'restaurant','categories'));
+        } else {
+            return view('admin.negate', compact('user'));
+        }
     }
 
     /**
@@ -51,8 +57,8 @@ class DishController extends Controller
      */
     public function store(Request $request, Restaurant $restaurant)
     {
-       
-        $request->validate([   
+
+        $request->validate([
             'dish_name' => 'required|string|max:255',
             'dish_photo' => 'nullable|image|max:2048',
             'price' => 'required|numeric|max:999,99',
@@ -63,10 +69,10 @@ class DishController extends Controller
         ]);
 
         $formData = $request->all();
-      
-        if ($request->hasFile('img')) {
-            $img_path = Storage::disk('public')->put('cover_dishes', $formData['img']);
-            $formData['img'] = $img_path;
+
+        if ($request->hasFile('dish_photo')) {
+            $img_path = Storage::disk('public')->put('cover_dishes', $formData['dish_photo']);
+            $formData['dish_photo'] = $img_path;
         };
 
         $user = Auth::user();
@@ -74,7 +80,7 @@ class DishController extends Controller
         $newDish->fill($formData);
         $newDish['dish_slug'] = Str::slug($formData['dish_name'], '-');
         $newDish->restaurant_id = $restaurant->id;
-        
+
         if(!$request->has('is_visible')) {
             $newDish-> is_visible = 0;
         };
@@ -149,10 +155,10 @@ class DishController extends Controller
         ]);
 
         $formData = $request->all();
-        if ($request->hasFile('img')) {
-            if($dish->dish_photo) {
-                Storage::delete($restaurant->dish_photo);
-            }
+        if ($request->hasFile('dish_photo')) {
+/*             if($dish->dish_photo) {
+                Storage::delete($dish->dish_photo);
+            } */
             $img_path = Storage::disk('public')->put('cover_dish', $formData['dish_photo']);
             $formData['dish_photo'] = $img_path;
         };
