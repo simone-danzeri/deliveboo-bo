@@ -67,6 +67,12 @@
 
         </tbody>
       </table>
+
+      <div class="mb-1">
+        <a class="btn ms-bg-primary" href="{{route('admin.dishes.create', [ 'restaurant' => $restaurant->slug] )}}">Create</a>
+      </div>
+
+
     </div>
 @endsection
 

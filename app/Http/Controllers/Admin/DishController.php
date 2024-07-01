@@ -36,9 +36,11 @@ class DishController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Restaurant $restaurant)
     {
-        //
+        $user = Auth::user();
+        $categories = Category::all();
+        return view('admin.dishes.create', compact('user', 'restaurant','categories'));
     }
 
     /**
@@ -47,9 +49,47 @@ class DishController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Restaurant $restaurant)
     {
-        //
+       
+        $request->validate([   
+            'dish_name' => 'required|string|max:255',
+            'dish_photo' => 'nullable|image|max:2048',
+            'price' => 'required|numeric|max:999,99',
+            'category_id'=> 'nullable|exists:categories,id',
+            'description' => 'nullable|string|max:1000',
+            'is_vegetarian' => 'boolean',
+            'is_visible' => 'boolean',
+        ]);
+
+        $formData = $request->all();
+      
+        if ($request->hasFile('img')) {
+            $img_path = Storage::disk('public')->put('cover_dishes', $formData['img']);
+            $formData['img'] = $img_path;
+        };
+
+        $user = Auth::user();
+        $newDish = new Dish();
+        $newDish->fill($formData);
+        $newDish['dish_slug'] = Str::slug($formData['dish_name'], '-');
+        $newDish->restaurant_id = $restaurant->id;
+        
+        if(!$request->has('is_visible')) {
+            $newDish-> is_visible = 0;
+        };
+
+        if(!$request->has('is_vegetarian')) {
+            $newDish-> is_vegetarian = 0;
+        };
+
+        if(!$request->has('category_id')) {
+            $newDish->category_id = null;
+        };
+
+        $newDish->save();
+        return redirect()->route('admin.dishes.index' ,compact('user','restaurant'));
+
     }
 
     /**
