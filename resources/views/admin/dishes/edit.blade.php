@@ -16,7 +16,7 @@
         @csrf
         @method('PUT')
         <div class="mb-3">
-          <label for="dish_name" class="form-label">Change name of this dish</label>
+          <label for="dish_name" class="form-label">Change name of this dish *</label>
           <input type="text" class="form-control" id="dish_name" name="dish_name" value="{{old('dish_name', $dish->dish_name)}}" required maxlength="255">
         </div>
         <div class="mb-3">
@@ -41,7 +41,7 @@
             <label class="form-check-label" for="is_vegetarian" >Is this dish vegetarian?</label>
         </div>
         <div class="mb-3">
-            <label for="price" class="form-label">Change the price of this dish</label>
+            <label for="price" class="form-label">Change the price of this dish *</label>
             <input type="text" class="form-control" id="price" name="price" value="{{old('price', $dish->price)}}" inputmode="numeric" pattern="^\d+(\.\d{1,2})?$" required min="0">
         </div>
         <div class="mb-3">

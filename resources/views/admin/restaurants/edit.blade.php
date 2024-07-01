@@ -16,12 +16,12 @@
         @csrf
         @method('PUT')
         <div class="mb-3">
-          <label for="restaurant_name" class="form-label">Restaurant Name</label>
-          <input type="text" class="form-control" id="restaurant_name" name="restaurant_name" value="{{old('restaurant_name', $restaurant->restaurant_name)}}">
+          <label for="restaurant_name" class="form-label">Restaurant Name *</label>
+          <input type="text" class="form-control" id="restaurant_name" name="restaurant_name" value="{{old('restaurant_name', $restaurant->restaurant_name)}}" required maxlength="255">
         </div>
         <div class="mb-3">
             <label for="img" class="form-label">Upload a new image for your restaurant</label>
-            <input class="form-control" type="file" id="img" name="img">
+            <input class="form-control" type="file" id="img" name="img" accept=".jpg, .jpeg, .png, .gif, .bmp, image/jpeg, image/png, image/gif, image/bmp">
         </div>
         <div class="mb-3">
             <label for="type_name" class="form-label">Choose a type</label>
@@ -33,16 +33,16 @@
             </select>
         </div>
         <div class="mb-3">
-            <label for="address" class="form-label">New Address</label>
-            <input type="text" class="form-control" id="address" name="address" value="{{ old('address', $restaurant->address) }}">
+            <label for="address" class="form-label">New Address *</label>
+            <input type="text" class="form-control" id="address" name="address" value="{{ old('address', $restaurant->address) }}" required maxlength="255">
         </div>
         <div class="mb-3">
-            <label for="phone" class="form-label">New Phone Number</label>
-            <input type="text" class="form-control" id="phone" name="phone" value="{{ old('phone', $restaurant->phone) }}">
+            <label for="phone" class="form-label">New Phone Number *</label>
+            <input type="text" class="form-control" id="phone" name="phone" value="{{ old('phone', $restaurant->phone) }}" required inputmode="numeric" pattern="\d{10}">
         </div>
         <div class="mb-3">
-            <label for="email" class="form-label">New Email Address</label>
-            <input type="text" class="form-control" id="email" name="email" value="{{ old('email', $restaurant->email) }}">
+            <label for="email" class="form-label">New Email Address *</label>
+            <input type="email" class="form-control" id="email" name="email" value="{{ old('email', $restaurant->email) }}">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
           </div>
         <button type="submit" class="btn btn-primary">Submit</button>
