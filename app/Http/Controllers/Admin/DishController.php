@@ -155,13 +155,17 @@ class DishController extends Controller
         ]);
 
         $formData = $request->all();
+
         if ($request->hasFile('dish_photo')) {
 /*             if($dish->dish_photo) {
                 Storage::delete($dish->dish_photo);
             } */
             $img_path = Storage::disk('public')->put('cover_dish', $formData['dish_photo']);
             $formData['dish_photo'] = $img_path;
+        } elseif ($request->has('delete-img')){
+            $formData['dish_photo'] = null;
         };
+
         $dish['dish_slug'] = Str::slug($formData['dish_name'], '-');
         $checkboxValueVisible = $request->has('is_visible') ? 1 : 0;
         $checkboxValueVegetarian = $request->has('is_vegetarian') ? 1 : 0;

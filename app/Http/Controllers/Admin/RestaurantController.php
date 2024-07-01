@@ -137,6 +137,8 @@ class RestaurantController extends Controller
             }
             $img_path = Storage::disk('public')->put('cover_restaurant', $formData['img']);
             $formData['img'] = $img_path;
+        } elseif ($request->has('delete-img')){
+            $formData['dish_photo'] = null;
         };
         $restaurant['slug'] = Str::slug($formData['restaurant_name'], '-');
         $restaurant->update($formData);
