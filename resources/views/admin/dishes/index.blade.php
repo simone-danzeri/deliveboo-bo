@@ -29,7 +29,7 @@
             @else
                 <td>Altro</td>
             @endif
-            @if ($dish->img)
+            @if ($dish->dish_photo)
                 <td>YES</td>
             @else
                 <td>NO</td>

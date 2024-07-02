@@ -52,7 +52,7 @@
                         Price
                     </div>
                     <div class="col-md-9">
-                        <p>${{ $dish->price }}</p>
+                        <p>{{ $dish->price }}€</p>
                     </div>
                 </div>
                 <div class="row mb-4">
@@ -64,6 +64,15 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="mb-1 mt-3">
+            <a class="btn btn-warning" href="{{route('admin.dishes.edit', [ 'restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] )}}">Edit</a>
+            <form action="{{ route('admin.dishes.destroy', ['restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug ] ) }}" class="d-inline-block" method="POST">
+                @csrf
+                @method('DELETE')
+
+                <button class="btn btn-danger" type="submit">Delete</button>
+            </form>
         </div>
     </div>
 @endsection
