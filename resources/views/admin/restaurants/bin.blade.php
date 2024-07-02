@@ -50,14 +50,14 @@
                 <td>NO</td>
             @endif
             <td>
-                <div class="mb-1">
+{{--                 <div class="mb-1">
                     <form action="{{ route('admin.restaurants.emptyBin', [ 'dish' => $dish ] ) }}" method="POST">
                         @csrf
                         @method('DELETE')
 
                         <button class="btn btn-danger" type="submit">Delete</button>
                     </form>
-                </div>
+                </div> --}}
                 <div class="mb-1">
                     <form action="{{ route('admin.restaurants.restoreBin', ['dish' => $dish] ) }}" method="POST">
                         @csrf

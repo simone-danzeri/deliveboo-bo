@@ -29,7 +29,12 @@ class DishController extends Controller
         //$restaurant = $getRestaurant[0];
         $user = Auth::user();
         $dishes = Dish::where('restaurant_id', '=', $restaurant['id'])->get();
-        return view('admin.dishes.index', compact('user', 'dishes', 'restaurant'));
+
+        if($user->id == $restaurant->user_id){
+            return view('admin.dishes.index', compact('user', 'dishes', 'restaurant'));
+        } else {
+            return view('admin.negate', compact('user'));
+        }
     }
 
     /**
@@ -206,7 +211,7 @@ class DishController extends Controller
                 $query->where('user_id', $user->id);
             })->get();
 
-        return view('admin.restaurants.bin', compact('binDishes', 'user', 'restaurant'));
+            return view('admin.restaurants.bin', compact('binDishes', 'user', 'restaurant'));
     }
 
     public function emptyBin($dish)
