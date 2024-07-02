@@ -2,6 +2,15 @@
 
 @section('content')
     <h1>{{$restaurant->restaurant_name}}'s Menu</h1>
+    {{-- Success Message Section --}}
+    <div>
+        @if (session()->has('message'))
+            <div class="alert alert-success">
+                {{ session('message') }}
+            </div>
+        @endif
+    </div>
+    {{-- Success Message Section --}}
 
     <div class="overflow-auto">
     <table class="table table-striped">

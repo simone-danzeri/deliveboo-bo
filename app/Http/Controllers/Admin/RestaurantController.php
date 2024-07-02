@@ -77,6 +77,8 @@ class RestaurantController extends Controller
             $newRestaurant->types()->attach($formData['types']); 
         }
 
+        session()->flash('message', 'Restaurant successfully created.');
+
         return redirect()->route('admin.restaurants.show', ['restaurant' => $newRestaurant->slug]);
 
     }
@@ -160,6 +162,8 @@ class RestaurantController extends Controller
         }else{
             $restaurant->types()->sync([]);
         }
+
+        session()->flash('message', 'Restaurant successfully edited.');
 
         return redirect()->route('admin.restaurants.show', ['restaurant' => $restaurant->slug]);
     }

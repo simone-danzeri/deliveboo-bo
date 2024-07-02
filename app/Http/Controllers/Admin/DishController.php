@@ -94,6 +94,9 @@ class DishController extends Controller
         };
 
         $newDish->save();
+
+        session()->flash('message', 'Dish successfully created.');
+
         return redirect()->route('admin.dishes.index' ,compact('user','restaurant'));
 
     }
@@ -175,6 +178,9 @@ class DishController extends Controller
         $dish['is_visible'] = $checkboxValueVisible;
         $dish['is_vegetarian'] = $checkboxValueVegetarian;
         $dish->update($formData);
+
+        session()->flash('message', 'Dish successfully edited.');
+
         return redirect()->route('admin.dishes.show', ['restaurant' => $restaurant->slug, 'dish' => $dish->dish_slug]);
     }
 

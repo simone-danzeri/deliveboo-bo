@@ -7,6 +7,15 @@
                 <h1>{{ $dish->dish_name }}</h1>
             </div>
             <div class="card-body">
+                {{-- Success Message Section --}}
+                <div>
+                    @if (session()->has('message'))
+                        <div class="alert alert-success">
+                            {{ session('message') }}
+                        </div>
+                    @endif
+                </div>
+                {{-- Success Message Section --}}
                 <div class="row mb-4">
                     <div class="col-md-3 fw-bold">
                         Type:
