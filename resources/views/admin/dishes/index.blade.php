@@ -2,6 +2,9 @@
 
 @section('content')
     <div class="overflow-auto">
+        <div class="d-flex mb-3 justify-content-end">
+            <a class="btn ms-bg-primary" href="{{route('admin.dishes.create', [ 'restaurant' => $restaurant->slug] )}}">Create a new dish</a>
+        </div>
     <table class="table table-striped">
         <thead>
           <tr>
