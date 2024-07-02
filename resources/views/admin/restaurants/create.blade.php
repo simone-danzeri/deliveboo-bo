@@ -43,6 +43,18 @@
                 </div>
 
                 <div class="mb-3">
+                    <h6>Types</h6>
+                    @foreach ($types as $type)
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" @checked(in_array($type->id, old('types', []))) name="types[]" type="checkbox" value="{{ $type->id }}" id="technology-{{ $type->id }}">
+                        <label class="form-check-label" for="technology-{{ $type->id }}">
+                        {{$type->type_name}}
+                        </label>
+                    </div> 
+                    @endforeach
+                </div>
+
+                <div class="mb-3">
                     <label for="img" class="form-label">Image</label>
                     <input class="form-control" type="file" name="img" accept=".jpg, .jpeg, .png, .gif, .bmp, image/jpeg, image/png, image/gif, image/bmp">
                 </div>

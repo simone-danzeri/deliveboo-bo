@@ -25,7 +25,7 @@
             <input type="checkbox" class="form-check-input" id="delete-img" name="delete-img" value="1" {{ old('delete-img') ? 'checked' : '' }}>
             <label class="form-check-label" for="delete-img">Check this checkbox if you want to completely delete the image instead</label>
         </div>
-        <div class="mb-3">
+        {{-- <div class="mb-3">
             <label for="type_name" class="form-label">Choose a type</label>
             <select class="form-select" aria-label="Default select example" id="type_name" name="type_name">
                 <option value="">Open this select menu</option>
@@ -33,6 +33,24 @@
                     <option value="{{ $type->id }}">{{ $type->type_name }}</option>
                 @endforeach
             </select>
+        </div> --}}
+        <div class="mb-3">
+            <h6>Types</h6>
+            @foreach ($types as $type)
+                <div class="form-check form-switch">
+                    {{--  Se ci sono errori in pagina, popolare le checkbox con l'old --}}
+                    @if ($errors->any())
+                    {{-- Se non ci sono errori in pagina l'utente sta caricando la pagina da zero, popolo le checkbox con il contain della collection --}}
+                    <input class="form-check-input" @checked(in_array($type->id, old('types', []))) name="types[]" type="checkbox"  value="{{ $type->id }}" id="technology-{{ $type->id }}">
+                    @else
+                    <input class="form-check-input" @checked($restaurant->types->contains($type))  name="types[]" type="checkbox" value="{{ $type->id }}" id="technology-{{ $type->id }}">    
+                    @endif
+                    
+                    <label class="form-check-label" for="technology-{{ $type->id }}">
+                    {{$type->type_name}}
+                    </label>
+                </div> 
+            @endforeach
         </div>
         <div class="mb-3">
             <label for="address" class="form-label">New Address *</label>
@@ -46,7 +64,8 @@
             <label for="email" class="form-label">New Email Address *</label>
             <input type="email" class="form-control" id="email" name="email" value="{{ old('email', $restaurant->email) }}">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
+        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 @endsection
