@@ -79,7 +79,7 @@
       </table>
         @if (count($dishes) > 5)
             <div class="mb-1">
-                <a class="btn ms-bg-primary" href="{{route('admin.dishes.create', [ 'restaurant' => $restaurant->slug] )}}">Create</a>
+                <a class="btn ms-bg-primary" href="{{route('admin.dishes.create', [ 'restaurant' => $restaurant->slug] )}}">Create a new dish</a>
             </div>
         @endif
 
