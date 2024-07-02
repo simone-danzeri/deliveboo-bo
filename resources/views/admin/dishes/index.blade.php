@@ -85,15 +85,15 @@
                 <div class="modal-body">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" id="modal-confirm-deletion" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
             </div>
         </div>
-{{-- CDN Bootstrap I NEED THIS FOR THE DELETE MODAL --}}
+{{-- CDN Bootstrap Js - I NEED THIS FOR THE DELETE MODAL --}}
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-{{-- /CDN Bootstrap I NEED THIS FOR THE DELETE MODAL --}}
+{{-- /CDN Bootstrap Js - I NEED THIS FOR THE DELETE MODAL --}}
         <script>
             // Modal for confirm elimination of a single dish
             const allDeleteButtons = document.querySelectorAll('.js-delete-btn');
