@@ -27,3 +27,4 @@ document.getElementById('registerForm').addEventListener('submit', function(even
         event.preventDefault();
     }
 });
+

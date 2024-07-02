@@ -31,7 +31,7 @@ Route::middleware(['auth', 'verified'])
 ->group(function() {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/negate-access', [DashboardController::class, 'negate'])->name('negate');
-    Route::delete('/restaurants/bin/{dish}', [DishController::class, 'emptyBin'])->name('restaurants.emptyBin');
+   // Route::delete('/restaurants/bin/{dish}', [DishController::class, 'emptyBin'])->name('restaurants.emptyBin');
     Route::patch('/restaurants/bin/{dish}', [DishController::class, 'restoreBin'])->name('restaurants.restoreBin');
     Route::get('/restaurants/bin', [DishController::class, 'bin'])->name('restaurants.bin');
     Route::resource('restaurants', RestaurantController::class)->parameters([
