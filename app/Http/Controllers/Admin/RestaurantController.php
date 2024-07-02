@@ -35,7 +35,9 @@ class RestaurantController extends Controller
     public function create()
     {
         $user = Auth::user();
-        return view('admin.restaurants.create', compact( 'user'));
+        $types = Type::all();
+
+        return view('admin.restaurants.create', compact( 'user', 'types'));
     }
 
     /**
@@ -53,20 +55,27 @@ class RestaurantController extends Controller
             'vat_number' => 'required|string|max:20',
             'email' => 'required|email|max:255',
             'img' => 'nullable|image|max:2048',
+            'types' => 'exists:types,id'
         ]);
 
         $formData = $request->all();
+        
         if ($request->hasFile('img')) {
             $img_path = Storage::disk('public')->put('cover_restaurant', $formData['img']);
             $formData['img'] = $img_path;
         };
-
+        
         $user = Auth::user();
         $newRestaurant = new Restaurant();
         $newRestaurant->fill($formData);
         $newRestaurant['slug'] = Str::slug($formData['restaurant_name'], '-');
         $newRestaurant->user_id = $user->id;
         $newRestaurant->save();
+
+        //gestione checkboxes types
+        if($request->has('types')) {
+           $newRestaurant->types()->attach($formData['types']); 
+        }
 
         return redirect()->route('admin.restaurants.show', ['restaurant' => $newRestaurant->slug]);
 
