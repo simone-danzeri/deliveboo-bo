@@ -18,12 +18,10 @@
           <tr>
             <th scope="col">Id</th>
             <th scope="col">Dish</th>
-            <th scope="col">Slug</th>
             <th scope="col">Category</th>
             <th scope="col">Img</th>
             <th scope="col">Visibility</th>
             <th scope="col">Price</th>
-            <th scope="col">Description</th>
             <th scope="col">For Vegetarians</th>
           </tr>
         </thead>
@@ -32,7 +30,6 @@
           <tr>
             <td>{{ $dish->id}}</td>
             <td>{{$dish->dish_name}}</td>
-            <td>{{$dish->dish_slug}}</td>
             @if($dish->category)
                 <td>{{$dish->category->name}}</td>
             @else
@@ -49,7 +46,6 @@
                 <td>NO</td>
             @endif
             <td>{{$dish->price}}€</td>
-            <td>{{$dish->description}}</td>
             @if ($dish->is_vegetarian)
                 <td>YES</td>
             @else
