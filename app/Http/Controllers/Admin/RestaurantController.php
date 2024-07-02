@@ -57,7 +57,7 @@ class RestaurantController extends Controller
 
         $formData = $request->all();
         if ($request->hasFile('img')) {
-            $img_path = Storage::disk('public')->put('restaurants', $formData['img']);
+            $img_path = Storage::disk('public')->put('cover_restaurant', $formData['img']);
             $formData['img'] = $img_path;
         };
 
