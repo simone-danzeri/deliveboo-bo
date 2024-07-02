@@ -19,7 +19,7 @@
     @vite(['resources/js/app.js'])
 </head>
 
-<body class="bg-light">
+<body>
     <div id="app">
 
 
