@@ -74,7 +74,7 @@ class RestaurantController extends Controller
 
         //gestione checkboxes types
         if($request->has('types')) {
-           $newRestaurant->types()->attach($formData['types']); 
+            $newRestaurant->types()->attach($formData['types']); 
         }
 
         return redirect()->route('admin.restaurants.show', ['restaurant' => $newRestaurant->slug]);
@@ -135,11 +135,13 @@ class RestaurantController extends Controller
                 'phone' => 'nullable|max:20',
                 'img' => 'nullable|image|max:255',
                 'type_name' => 'nullable|exists:types,id',
-                'email' => 'nullable|email'
+                'email' => 'nullable|email',
+                'types' => 'exists:types,id'
             ]
         );
         // Validation
         $formData = $request->all();
+        
         if ($request->hasFile('img')) {
             if($restaurant->img) {
                 Storage::delete($restaurant->img);
@@ -151,6 +153,14 @@ class RestaurantController extends Controller
         };
         $restaurant['slug'] = Str::slug($formData['restaurant_name'], '-');
         $restaurant->update($formData);
+
+        // Gestione checkboxes types
+        if($request->has('types')) {
+            $restaurant->types()->sync($formData['types']); 
+        }else{
+            $restaurant->types()->sync([]);
+        }
+
         return redirect()->route('admin.restaurants.show', ['restaurant' => $restaurant->slug]);
     }
 

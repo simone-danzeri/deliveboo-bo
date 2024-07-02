@@ -25,6 +25,17 @@
                     <h5 class="fw-bold">Slug:</h5>
                     <p>{{ $restaurant->slug }}</p>
                 </div>
+                <div class="mb-3">
+                    <h5 class="fw-bold">Type:</h5>
+                    @if (count($restaurant->types) > 0)
+                        @foreach ($restaurant->types as $type)
+                            {{$type->type_name}}
+                        @endforeach
+                        
+                    @else
+                        No types assigned    
+                    @endif
+                </div>
                 {{-- Uncomment if image is available --}}
                 {{-- 
                 <div class="mb-3">

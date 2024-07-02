@@ -45,7 +45,7 @@
                 <div class="mb-3">
                     <h6>Types</h6>
                     @foreach ($types as $type)
-                    <div class="form-check">
+                    <div class="form-check form-switch">
                         <input class="form-check-input" @checked(in_array($type->id, old('types', []))) name="types[]" type="checkbox" value="{{ $type->id }}" id="technology-{{ $type->id }}">
                         <label class="form-check-label" for="technology-{{ $type->id }}">
                         {{$type->type_name}}
