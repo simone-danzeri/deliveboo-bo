@@ -205,11 +205,7 @@ class DishController extends Controller
                 $query->where('user_id', $user->id);
             })->get();
 
-        if ($user->id == $restaurant->user_id) {
             return view('admin.restaurants.bin', compact('binDishes', 'user', 'restaurant'));
-        } else {
-            return view('admin.negate', compact('user'));
-        }
     }
 
     public function emptyBin($dish)
