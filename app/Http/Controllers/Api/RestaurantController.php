@@ -11,7 +11,7 @@ use Illuminate\Validation\Rule;
 class RestaurantController extends Controller
 {
     public function index() {
-        $restaurants = Restaurant::all();
+        $restaurants = Restaurant::with('types')->get();
         return response()->json([
             "success" => true,
             "results" => $restaurants
