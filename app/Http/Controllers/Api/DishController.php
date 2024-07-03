@@ -12,25 +12,25 @@ use Illuminate\Validation\Rule;
 class DishController extends Controller
 {
     public function index(Request $request) {
-        $restaurant = $request->query('restaurant');
-        if(!$restaurant || !is_numeric($restaurant)) {
+        $slug = $request->query('slug');
+        if(!$slug) {
             return response()->json([
                 "success" => false,
                 "results" => 'This value is invalid'
             ]);
         };
-        $dishes = Dish::where('restaurant_id', '=', $restaurant)->where('is_visible', '=', true)->get();
-        if(count($dishes) == 0) {
-            return response()->json([
-                "success" => false,
-                "results" => "No dishes exists for this restaurant or this restaurant doesn't exists"
-            ]);
-        }  else {
-            return response()->json([
-                "success" => true,
-                "results" => $dishes
-            ]);
-    }
-
+        $restaurant = Restaurant::where('slug', '=', $slug)->first();
+        $dishes = $restaurant->dishes->where('is_visible', '=', true);
+            if(count($dishes) == 0) {
+                return response()->json([
+                    "success" => false,
+                    "results" => "No dishes exists for this restaurant or this restaurant doesn't exists"
+                ]);
+            } else {
+                return response()->json([
+                    "success" => true,
+                    "results" => $dishes
+                ]);
+            }
 }
 }
