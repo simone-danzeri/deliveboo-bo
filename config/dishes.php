@@ -126,7 +126,7 @@ return [
         'restaurant_id' => 5,
         'dish_name' => 'Insalata Di Mare',
         'category_id' => 1,
-        'dish_photo' => 'cover_dish/bruschettasaderdxs.jpeg',
+        'dish_photo' => null,
         'is_visible' => true,
         'price' => 10.00,
         'description' => 'Pane e pomodorini.',
@@ -326,12 +326,12 @@ return [
     ],
     [
         'restaurant_id' => 4,
-        'dish_name' => 'Risotto alla Milanese',
+        'dish_name' => 'Risotto allo Zafferano',
         'category_id' => 2,
         'dish_photo' => 'cover_dish/risottozafferanosdfsdf.jpg',
         'is_visible' => true,
         'price' => 12.00,
-        'description' => 'Risotto allo zafferano, tipico della cucina milanese.',
+        'description' => 'Risotto cremoso giallo, tipico della cucina milanese.',
         'is_vegetarian' => false
     ],
     [
@@ -488,7 +488,7 @@ return [
         'restaurant_id' => 9,
         'dish_name' => 'Risotto allo Zafferano',
         'category_id' => 2,
-        'dish_photo' => 'cover_dish/risottoallozafferanodsdsbhf',
+        'dish_photo' => 'cover_dish/risottoallozafferanodsdsbhf.jpeg',
         'is_visible' => true,
         'price' => 14.00,
         'description' => 'Risotto cremoso con lo zafferano.',
@@ -682,7 +682,7 @@ return [
         'restaurant_id' => 19,
         'dish_name' => 'Puntas de Filete',
         'category_id' => 3,
-        'dish_photo' => 'cover_dish/puntasdefiletegusdr.jpeg',
+        'dish_photo' => 'cover_dish/puntasdefiletegusdr.jpg',
         'is_visible' => true,
         'price' => 12.00,
         'description' => 'Punte di filetto di manzo saltate in padella con cipolla e riso',
@@ -692,7 +692,7 @@ return [
         'restaurant_id' => 19,
         'dish_name' => 'Pulpo a la Mexicana',
         'category_id' => 3,
-        'dish_photo' => 'cover_dish/pulpoalamexicana.jpeg',
+        'dish_photo' => 'cover_dish/pulpoalamexicana.jpg',
         'is_visible' => true,
         'price' => 10.00,
         'description' => 'Polpo cotto in una salsa di pomodoro con cipolla spesso servito con riso',
@@ -702,7 +702,7 @@ return [
         'restaurant_id' => 17,
         'dish_name' => 'Relleno negro',
         'category_id' => 3,
-        'dish_photo' => 'cover_dish/rellenonegrogfdr.jpeg',
+        'dish_photo' => 'cover_dish/rellenonegrogfdr.jpg',
         'is_visible' => true,
         'price' => 12.00,
         'description' => 'Tenera carne di maiale marinata e cotta lentamente in una salsa densa di pepe nero',
@@ -712,7 +712,7 @@ return [
         'restaurant_id' => 17,
         'dish_name' => 'Cochinita Pibil',
         'category_id' => 3,
-        'dish_photo' => 'cover_dish/cochinitapibildagsgsags.jpeg',
+        'dish_photo' => 'cover_dish/cochinitapibildagsgsags.jpg',
         'is_visible' => true,
         'price' => 12.00,
         'description' => 'Preparata con carne di maiale marinata in una miscela di achiote, cotta lentamente in un forno sotterraneo o in un cestello di metallo',
@@ -722,7 +722,7 @@ return [
         'restaurant_id' => 17,
         'dish_name' => 'Puerco en salsa verde',
         'category_id' => 3,
-        'dish_photo' => 'cover_dish/puercosalsaverdepolikuj.jpeg',
+        'dish_photo' => 'cover_dish/puercosalsaverdepolikuj.jpg',
         'is_visible' => true,
         'price' => 11.00,
         'description' => 'Succulenti bocconcini di maiale cotti lentamente in una salsa verde piccante e aromatica.',
@@ -732,7 +732,7 @@ return [
         'restaurant_id' => 16,
         'dish_name' => 'Relleno negro',
         'category_id' => 3,
-        'dish_photo' => 'cover_dish/rellenonegrogfdr.jpeg',
+        'dish_photo' => 'cover_dish/rellenonegrogfdr.jpg',
         'is_visible' => true,
         'price' => 12.00,
         'description' => 'Tenera carne di maiale marinata e cotta lentamente in una salsa densa di pepe nero',
@@ -742,7 +742,7 @@ return [
         'restaurant_id' => 16,
         'dish_name' => 'Cochinita Pibil',
         'category_id' => 3,
-        'dish_photo' => 'cover_dish/cochinitapibildagsgsags.jpeg',
+        'dish_photo' => 'cover_dish/cochinitapibildagsgsags.jpg',
         'is_visible' => true,
         'price' => 12.00,
         'description' => 'Preparata con carne di maiale marinata in una miscela di achiote, cotta lentamente in un forno sotterraneo o in un cestello di metallo',
@@ -752,7 +752,7 @@ return [
         'restaurant_id' => 16,
         'dish_name' => 'Puerco en salsa verde',
         'category_id' => 3,
-        'dish_photo' => 'cover_dish/puercosalsaverdepolikuj.jpeg',
+        'dish_photo' => 'cover_dish/puercosalsaverdepolikuj.jpg',
         'is_visible' => true,
         'price' => 11.00,
         'description' => 'Succulenti bocconcini di maiale cotti lentamente in una salsa verde piccante e aromatica.',
@@ -762,7 +762,7 @@ return [
         'restaurant_id' => 16,
         'dish_name' => 'Puntas de Filete',
         'category_id' => 3,
-        'dish_photo' => 'cover_dish/puntasdefiletegusdr.jpeg',
+        'dish_photo' => 'cover_dish/puntasdefiletegusdr.jpg',
         'is_visible' => true,
         'price' => 12.00,
         'description' => 'Punte di filetto di manzo saltate in padella con cipolla e riso',
@@ -772,7 +772,7 @@ return [
         'restaurant_id' => 16,
         'dish_name' => 'Pulpo a la Mexicana',
         'category_id' => 3,
-        'dish_photo' => 'cover_dish/pulpoalamexicana.jpeg',
+        'dish_photo' => 'cover_dish/pulpoalamexicana.jpg',
         'is_visible' => true,
         'price' => 10.00,
         'description' => 'Polpo cotto in una salsa di pomodoro con cipolla spesso servito con riso',
@@ -1347,7 +1347,7 @@ return [
         'restaurant_id' => 1,
         'dish_name' => 'Cheesecake Fredda',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.webp',
         'is_visible' => true,
         'price' => 5.50,
         'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
@@ -1357,7 +1357,7 @@ return [
         'restaurant_id' => 3,
         'dish_name' => 'Cheesecake Fredda',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.webp',
         'is_visible' => true,
         'price' => 5.50,
         'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
@@ -1367,7 +1367,7 @@ return [
         'restaurant_id' => 4,
         'dish_name' => 'Cheesecake Fredda',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.webp',
         'is_visible' => true,
         'price' => 5.50,
         'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
@@ -1377,7 +1377,7 @@ return [
         'restaurant_id' => 5,
         'dish_name' => 'Cheesecake Fredda',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.webp',
         'is_visible' => true,
         'price' => 5.50,
         'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
@@ -1387,7 +1387,7 @@ return [
         'restaurant_id' => 6,
         'dish_name' => 'Cheesecake Fredda',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.webp',
         'is_visible' => true,
         'price' => 5.50,
         'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
@@ -1397,7 +1397,7 @@ return [
         'restaurant_id' => 8,
         'dish_name' => 'Cheesecake Fredda',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.webp',
         'is_visible' => true,
         'price' => 5.50,
         'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
@@ -1407,7 +1407,7 @@ return [
         'restaurant_id' => 9,
         'dish_name' => 'Cheesecake Fredda',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.webp',
         'is_visible' => true,
         'price' => 5.50,
         'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
@@ -1417,7 +1417,7 @@ return [
         'restaurant_id' => 10,
         'dish_name' => 'Cheesecake Fredda',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.webp',
         'is_visible' => true,
         'price' => 5.50,
         'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
@@ -1427,7 +1427,7 @@ return [
         'restaurant_id' => 12,
         'dish_name' => 'Cheesecake Fredda',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.webp',
         'is_visible' => true,
         'price' => 5.50,
         'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
@@ -1437,7 +1437,7 @@ return [
         'restaurant_id' => 13,
         'dish_name' => 'Cheesecake Fredda',
         'category_id' => 7,
-        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.jpeg',
+        'dish_photo' => 'cover_dish/cheesecakeSIcnsj3423H.webp',
         'is_visible' => true,
         'price' => 5.50,
         'description' => 'Un dolce avvolgente, con il suo topping ai frutti di bosco',
@@ -1632,7 +1632,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1642,7 +1642,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1662,7 +1662,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1672,7 +1672,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1692,7 +1692,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1702,7 +1702,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1722,7 +1722,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1732,7 +1732,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1752,7 +1752,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1762,7 +1762,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1782,7 +1782,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1792,7 +1792,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1812,7 +1812,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1822,7 +1822,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1842,7 +1842,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1852,7 +1852,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1872,7 +1872,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1882,7 +1882,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1902,7 +1902,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1912,7 +1912,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1932,7 +1932,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1942,7 +1942,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1962,7 +1962,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -1972,7 +1972,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -1992,7 +1992,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -2002,7 +2002,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -2022,7 +2022,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -2032,7 +2032,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -2052,7 +2052,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -2062,7 +2062,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -2082,7 +2082,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -2092,7 +2092,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -2112,7 +2112,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -2122,7 +2122,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -2142,7 +2142,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -2152,7 +2152,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
@@ -2172,7 +2172,7 @@ return [
         'dish_photo' => 'cover_dish/naturaleISIajdi7921UIdush.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Dal 20.000 ac la bevanda più amata.',
         'is_vegetarian' => true
     ],
     [
@@ -2182,7 +2182,7 @@ return [
         'dish_photo' => 'cover_dish/frizzaAIjdioAd8291.jpeg',
         'is_visible' => true,
         'price' => 1.50,
-        'description' => 'Dal 1886 la bevanda più amata.',
+        'description' => 'Per gli amanti astemi delle bollicine.',
         'is_vegetarian' => true
     ],
     [
