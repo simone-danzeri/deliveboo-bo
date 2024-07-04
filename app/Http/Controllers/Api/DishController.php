@@ -20,7 +20,8 @@ class DishController extends Controller
             ]);
         };
         $restaurant = Restaurant::where('slug', '=', $slug)->first();
-        $dishes = $restaurant->dishes->where('is_visible', '=', true);
+        // $dishes = $restaurant->dishes->where('is_visible', '=', true);
+        $dishes = Dish::where('restaurant_id', '=', $restaurant->id)->where('is_visible', '=', true)->with('restaurant')->get();
             if(count($dishes) == 0) {
                 return response()->json([
                     "success" => false,
