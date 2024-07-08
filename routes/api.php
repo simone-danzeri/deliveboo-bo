@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\RestaurantController;
 use App\Http\Controllers\Api\DishController;
 use App\Http\Controllers\Api\ImageController;
 use App\Http\Controllers\Api\TypeController;
+use App\Http\Controllers\Api\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,5 @@ Route::get('/restaurants', [RestaurantController::class, 'index']);
 Route::get('/dishes', [DishController::class, 'index']);
 Route::get('/img', [ImageController::class, 'show']);
 Route::get('/types', [TypeController::class, 'index']);
+Route::get('/orders', [OrderController::class, 'generate']);
 
