@@ -14,12 +14,20 @@ use App\Models\Category;
 use App\Models\Dish;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use App\Models\Order;
 
 class OrderController extends Controller
 {
     public function index(Restaurant $restaurant, Dish $dish) {
         $user = Auth::user();
-        return view('admin.orders.index', compact('restaurant', 'dish', 'user'));
+        $orders = Order::where('restaurant_id', '=', $restaurant['id'])->get();
+        
+
+        if($user->id == $restaurant->user_id){
+            return view('admin.orders.index', compact('restaurant', 'dish', 'user', 'orders'));
+        } else {
+            return view('admin.negate', compact('user'));
+        }
     }
     public function userInfo(Restaurant $restaurant, Dish $dish) {
         $user = Auth::user();

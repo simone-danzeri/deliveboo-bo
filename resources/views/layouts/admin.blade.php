@@ -94,6 +94,10 @@
 
                                                             <a href="{{route('admin.dishes.index', ['restaurant' => $rest->slug])}}" class="ms-link">Show Menu</a>
                                                         </li>
+                                                        <li>
+
+                                                            <a href="{{route('admin.orders.index', ['restaurant' => $rest->slug])}}" class="ms-link">Orders</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                             </ul>
