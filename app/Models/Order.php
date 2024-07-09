@@ -11,6 +11,9 @@ class Order extends Model
     public function dishes() {
         return $this->belongsToMany(Dish::class);
     }
+    public function restaurant() {
+        return $this->belongsTo(Restaurant::class);
+    }
 
-    protected $fillable = ['client_name', 'client_surname', 'address',  'phone', 'email', 'total'];
+    protected $fillable = ['client_name', 'client_surname', 'address',  'phone', 'email', 'total', 'restaurant_id'];
 }

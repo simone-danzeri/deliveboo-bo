@@ -16,6 +16,7 @@ class OrderController extends Controller
             'params.email'=> 'required|email|max:100',
             'params.address'=> 'required|string|max:255',
             'params.total'=> 'required|numeric|max:999,99',
+            'params.restaurant_id'=> 'required|numeric',
         ]);
         $newOrder = Order::create([
             'client_name'=>$request['params']['client_name'],
@@ -24,12 +25,16 @@ class OrderController extends Controller
             'email'=>$request['params']['email'],
             'address'=>$request['params']['address'],
             'total'=>$request['params']['total'],
+            'restaurant_id'=>$request['params']['restaurant_id']
         ]);
         //$newOrder->fill($validatedData);
         //$newOrder->save();
+        foreach($request['params']['cart'] as $cartElement) {
+            $newOrder->dishes()->attach($cartElement['dishInfo']['id'], ['quantity'=>$cartElement['quantity']]);
+        }
         return response()->json([
             "success" => true,
-            "results" => $newOrder
+            "results" => $newOrder,
         ]);
 
        /*  if($validatedData){

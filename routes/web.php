@@ -41,8 +41,8 @@ Route::middleware(['auth', 'verified'])
     Route::resource('{restaurant}/dishes', DishController::class)->parameters([
         'dishes' => 'dish:dish_slug'
     ]);
-    Route::get('/orders', [OrderController::class, 'index']);
-    Route::get('/orders/userInfo', [OrderController::class, 'userInfo']);
+    Route::get('/{restaurant}/orders', [OrderController::class, 'index']);
+    Route::get('/{restaurant}/orders/{orderId}', [OrderController::class, 'userInfo']);
 });
 
 

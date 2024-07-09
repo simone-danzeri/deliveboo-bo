@@ -1,5 +1,5 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h1>questa pagina sarà l'elenco dei piatti dell'ordine</h1>
+    <h1>Orders for {{ $restaurant->restaurant_name }}</h1>
 @endsection

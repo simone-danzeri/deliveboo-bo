@@ -21,6 +21,9 @@ return new class extends Migration
             $table->string('email');
             $table->string('address');
             $table->unsignedDecimal('total', 6, 2);
+            $table->foreignId('restaurant_id')
+            ->constrained()
+            ->onDelete('cascade');
             $table->timestamps();
         });
     }
