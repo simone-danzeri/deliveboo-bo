@@ -29,8 +29,17 @@ class OrderController extends Controller
             return view('admin.negate', compact('user'));
         }
     }
-    public function userInfo(Restaurant $restaurant, Order $order) {
+
+    
+    public function show(Restaurant $restaurant, Order $order) {
         $user = Auth::user();
-        return view('admin.orders.user-info', compact('restaurant', 'dish', 'user'));
+        if($user->id == $restaurant->user_id){
+            return view('admin.orders.show', compact('restaurant', 'order', 'user'));
+        }
+        else{
+            return view('admin.negate', compact('user'));
+        }
+
+        
     }
 }
