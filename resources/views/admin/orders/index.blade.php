@@ -17,7 +17,7 @@
                 <th scope="col">Address</th>
                 <th scope="col">Total</th>
                 <th scope="col">Created at</th>
-                <th scope="col">Action</th>
+                <th scope="col">Details</th>
             </tr>
             </thead>
             <tbody>
@@ -32,7 +32,7 @@
                 <td>{{$order->created_at}}</td>
                 <td>
                     <div>
-                        <a class="btn btn-success" href="">View</a> {{-- AGGIUNGERE ROTTA PER ORDINE --}}
+                        <a class="btn btn-success" href="{{route('admin.orders.show', ['restaurant' => $restaurant->slug, 'order' => $order->id])}}">View</a> {{-- AGGIUNGERE ROTTA PER ORDINE --}}
                     </div>
                 </td>
             </tr>
