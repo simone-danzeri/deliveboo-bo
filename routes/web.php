@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\RestaurantController;
 use App\Http\Controllers\Admin\DishController;
 use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\PaymentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,8 +42,9 @@ Route::middleware(['auth', 'verified'])
     Route::resource('{restaurant}/dishes', DishController::class)->parameters([
         'dishes' => 'dish:dish_slug'
     ]);
-    Route::get('/{restaurant}/orders', [OrderController::class, 'index']);
+    Route::get('/{restaurant}/orders', [OrderController::class, 'index'])->name('orders.index');
     Route::get('/{restaurant}/orders/{order}', [OrderController::class, 'show'])->name('orders.show');
+
 });
 
 
@@ -51,5 +53,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('token', [PaymentController::class, 'token']);
+Route::post('checkout', [PaymentController::class, 'checkout']);
 
 require __DIR__.'/auth.php';

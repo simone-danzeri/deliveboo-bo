@@ -18,10 +18,18 @@ use App\Models\Order;
 
 class OrderController extends Controller
 {
-    public function index(Restaurant $restaurant, Dish $dish) {
+    public function index(Restaurant $restaurant) {
         $user = Auth::user();
-        return view('admin.orders.index', compact('restaurant', 'dish', 'user'));
+        $orders = Order::where('restaurant_id', '=', $restaurant['id'])->get();
+        
+
+        if($user->id == $restaurant->user_id){
+            return view('admin.orders.index', compact('restaurant', 'user', 'orders'));
+        } else {
+            return view('admin.negate', compact('user'));
+        }
     }
+
     
     public function show(Restaurant $restaurant, Order $order) {
         $user = Auth::user();
