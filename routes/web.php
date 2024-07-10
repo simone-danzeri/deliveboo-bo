@@ -42,7 +42,7 @@ Route::middleware(['auth', 'verified'])
         'dishes' => 'dish:dish_slug'
     ]);
     Route::get('/{restaurant}/orders', [OrderController::class, 'index']);
-    Route::get('/{restaurant}/orders/{orderId}', [OrderController::class, 'userInfo']);
+    Route::get('/{restaurant}/orders/{order}', [OrderController::class, 'show']);
 });
 
 

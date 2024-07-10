@@ -14,6 +14,7 @@ use App\Models\Category;
 use App\Models\Dish;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use App\Models\Order;
 
 class OrderController extends Controller
 {
@@ -21,8 +22,8 @@ class OrderController extends Controller
         $user = Auth::user();
         return view('admin.orders.index', compact('restaurant', 'dish', 'user'));
     }
-    public function userInfo(Restaurant $restaurant, Dish $dish) {
+    public function show(Restaurant $restaurant, Order $order) {
         $user = Auth::user();
-        return view('admin.orders.user-info', compact('restaurant', 'dish', 'user'));
+        return view('admin.orders.show', compact('restaurant', 'order', 'user'));
     }
 }
