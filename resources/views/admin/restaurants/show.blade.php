@@ -32,7 +32,7 @@
                         <p>{{ $restaurant->slug }}</p>
                     </div>
                 </div>
-    
+
                 <div class="row mb-4">
                     <div class="col-md-3 fw-bold">
                         Image:
@@ -45,7 +45,7 @@
                         @endif
                     </div>
                 </div>
-    
+
                 <div class="row mb-4">
                     <div class="col-md-3 fw-bold">
                         Type:
@@ -55,13 +55,13 @@
                         @foreach ($restaurant->types as $type)
                             {{$type->type_name}}
                         @endforeach
-                        
+
                         @else
-                            <span>No types assigned</span>    
+                            <span>No types assigned</span>
                         @endif
                     </div>
                 </div>
-    
+
                 <div class="row mb-4">
                     <div class="col-md-3 fw-bold">
                         Address:
@@ -94,16 +94,11 @@
                         <p>{{ $restaurant->vat_number }}</p>
                     </div>
                 </div>
-    
-    
-    
+
+
+
                 <div class="d-flex justify-content-end">
                     <a href="{{ route('admin.restaurants.edit', ['restaurant' => $restaurant->slug]) }}" class="btn btn-primary me-2">Edit</a>
-                    <form action="{{ route('admin.restaurants.destroy', ['restaurant' => $restaurant->slug]) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this restaurant?')">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
                 </div>
             </div>
         </div>
