@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Order;
+use App\Mail\SendNewMail;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -32,6 +34,7 @@ class OrderController extends Controller
         foreach($request['params']['cart'] as $cartElement) {
             $newOrder->dishes()->attach($cartElement['dishInfo']['id'], ['quantity'=>$cartElement['quantity']]);
         }
+        Mail::to($request['params']['email'])->send(new SendNewMail());
         return response()->json([
             "success" => true,
             "results" => $newOrder,
@@ -47,4 +50,5 @@ class OrderController extends Controller
         }; */
 
     }
+
 }
